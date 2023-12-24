@@ -1,11 +1,35 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.tsx'
-import Home from './pages/Home.tsx'
+//main imports
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 
+//pages import
+import App from './App.tsx';
+import Loader from './components/Loader.tsx';
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-)
+//CSS import
+import '../public/css/Loader.css'
+
+const Root = () => {
+  const [showLoader, setShowLoader] = React.useState(true);
+
+  React.useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      setShowLoader(false);
+    }, 7500);
+
+    return () => clearTimeout(timeoutId);
+  }, []);
+
+  return (
+    <Router>
+      {showLoader ? (
+        <Loader />
+      ) : (
+        <App />
+      )}
+    </Router>
+  );
+};
+
+ReactDOM.render(<Root />, document.getElementById('root'));

@@ -1,13 +1,15 @@
 :root{
-  --primary-colour: #000;
+  --primary-colour: #2c2c2c;
   --secondary-colour: #fff;
 }
 
 @font-face {
   font-family: 'switzer';
-  src: url('../public/fonts/Switzer-Variable.ttf');
+  src: url('../fonts/Switzer-Variable.ttf');
 }
 
-h1{
+body{
+  background-color: var(--primary-colour);
+  color: var(--secondary-colour);
   font-family: 'switzer';
 }

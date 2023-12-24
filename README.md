@@ -112,7 +112,7 @@ To set up Firebase:
 We welcome contributions to the Murious Event Website! If you'd like to contribute, please follow these steps:
 
 1. **Fork the repository:**
-   - Click the "Fork" button at the top right of the GitHub page.
+   - Click the "Star" button, followed by the "Fork" button at the top right of the GitHub page.
 
 2. **Clone your fork:**
    - In GitHub Desktop, click on "Repository" and select "Clone Repository."

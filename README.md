@@ -51,7 +51,7 @@ Before getting started, make sure you have Node.js installed. You can download i
      ```bash
      npm run dev
      ```
-   - The website will be accessible at `http://localhost:3000`.
+   - The website will be accessible at `http://localhost:5173`.
 
 ### 6. Build for production:
 

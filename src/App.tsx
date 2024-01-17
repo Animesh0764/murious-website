@@ -1,11 +1,17 @@
-import './App.css'
-
+// App.tsx
+import { Route, Routes } from 'react-router-dom';
+import Gallery from './pages/Gallery';
+import Home from './pages/Home';
+import About from './pages/About';
 
 function App() {
-
   return (
-    <h1>Hello World</h1>
-  )
+    <Routes>
+      <Route path='/' element={<Home />} />
+      <Route path='/about' element={<About />} />
+      <Route path='/gallery' element={<Gallery />} />
+    </Routes>
+  );
 }
 
-export default App
+export default App;

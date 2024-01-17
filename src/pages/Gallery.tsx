@@ -1,6 +1,8 @@
 import { useRef, useEffect } from 'react';
 import '../../public/css/Gallery.css';
 
+import { Link } from 'react-router-dom';
+
 const Gallery = () => {
   const slideRef = useRef<HTMLDivElement | null>(null);
 
@@ -29,26 +31,31 @@ const Gallery = () => {
       image: 'public/images/hackathon.webp',
       name: 'Hackathon',
       description: 'hackathon 2.0',
+      link: '/gallery/hackathon'
     },
     {
       image: 'public/images/webo.webp',
       name: 'Web-O-Fiesta',
       description: 'Designing beautiful websites',
+      link: '/gallery/hackathon'
     },
     {
       image: 'public/images/pictureperfect.webp',
       name: 'Picture Perfect',
       description: 'Showcasing the story through pictures',
+      link: '/gallery/hackathon'
     },
     {
       image: 'public/images/stock.webp',
       name: 'Stock Simulation',
       description: 'Virtual stock trading',
+      link: '/gallery/hackathon'
     },
     {
       image: 'public/images/design.webp',
       name: 'Make It Print',
       description: 'Designing T-Shirts',
+      link: '/gallery/hackathon'
     },
   ];
 
@@ -60,7 +67,7 @@ const Gallery = () => {
             <div className="content">
               <div className="name">{item.name}</div>
               <div className="des">{item.description}</div>
-              <button>See More</button>
+              <Link to={item.link} rel="noopener noreferrer"><button>See More</button></Link>
             </div>
           </div>
         ))}

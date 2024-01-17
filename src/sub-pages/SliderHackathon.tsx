@@ -1,15 +1,15 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import '../../public/css/Sub-page.css';
 
-function Slider() {
+function SliderHackathon() {
     const [itemActive, setItemActive] = useState(0);
 
     const itemsData = [
-        { src: 'public/images/image3.webp', content: 'Hackathon' },
-        { src: 'public/images/image1.webp', content: 'Hackathon' },
-        { src: 'public/images/image2.webp', content: 'Hackathon' },
-        { src: 'public/images/image11.webp', content: 'Hackathon' },
-        { src: 'public/images/image4.webp', content: 'Hackathon' },
+        { src: '../../public/images/image3.webp', content: 'Hackathon' },
+        { src: '../../public/images/image1.webp', content: 'Hackathon' },
+        { src: '../../public/images/image2.webp', content: 'Hackathon' },
+        { src: '../../public/images/image11.webp', content: 'Hackathon' },
+        { src: '../../public/images/image4.webp', content: 'Hackathon' },
     ];
 
     const countItem = itemsData.length;
@@ -56,4 +56,4 @@ function Slider() {
     );
 }
 
-export default Slider;
+export default SliderHackathon;

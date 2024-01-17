@@ -1,14 +1,16 @@
 //main imports
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router} from 'react-router-dom';
+
+//components import
 
 //pages import
 import App from './App.tsx';
 import Loader from './components/Loader.tsx';
 
 //CSS import
-import '../public/css/Loader.css'
+import '../public/css/Loader.css';
 
 const Root = () => {
   const [showLoader, setShowLoader] = React.useState(true);

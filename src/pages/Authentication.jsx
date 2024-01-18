@@ -2,12 +2,16 @@ import { useState } from "react";
 import "../../public/css/Auth.css";
 import Murious from "../../public/images/muriouslogo.webp";
 import { FaEnvelope, FaLock, FaGoogle } from "react-icons/fa";
+import { useFirebase } from "../context/firebase";
+import { getAuth, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
+import { redirect } from "react-router-dom";
 
 const Authentication = () => {
   const [isSignUpMode, setSignUpMode] = useState(false);
   const [isSignUpMode2, setSignUpMode2] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
   const [showPassword1, setShowPassword1] = useState(false);
+  
 
   const handleToggleSignUp = () => {
     setSignUpMode(!isSignUpMode);
@@ -25,6 +29,17 @@ const Authentication = () => {
     setShowPassword1(!showPassword1);
   };
 
+  const firebaseAuth = getAuth();
+  const user = firebaseAuth.currentUser;
+
+  const signupUserUsingGoogle = () => {
+    const provider = new GoogleAuthProvider();
+    signInWithPopup(firebaseAuth, provider)
+    redirect('/')
+  }
+
+  const firebase = useFirebase();
+
   return (
     <div className="sign-body">
       <div
@@ -33,6 +48,7 @@ const Authentication = () => {
         }`}
       >
         <div className="signin-signup">
+          <div className="singin-page">
           <form
             action=""
             className={`sign-in-form ${isSignUpMode ? "hidden" : ""}`}
@@ -50,7 +66,7 @@ const Authentication = () => {
               </i>
               <input
                 type={showPassword ? "text" : "password"}
-                required
+                
                 id="passw"
                 placeholder="Password"
               />
@@ -63,13 +79,6 @@ const Authentication = () => {
             </div>
             <input type="submit" value="Login" className="btn" />
             <p className="social-text">Or Sign in with a social platform</p>
-            <div className="social-media">
-              <a href="" className="social-icon">
-                <i className="fab fa-google">
-                  <FaGoogle></FaGoogle>
-                </i>
-              </a>
-            </div>
             <p className="account-text">
               Don't have an account?{" "}
               <a href="#" onClick={handleToggleSignUp2}>
@@ -77,7 +86,16 @@ const Authentication = () => {
               </a>
             </p>
           </form>
+          <div className="social-media">
+              <button onClick={signupUserUsingGoogle} className="social-icon">
+                <i className="fab fa-google">
+                  <FaGoogle></FaGoogle>
+                </i>
+              </button>
+            </div>
+          </div>
 
+          <div className="signup-page">
           <form
             action=""
             className={`sign-up-form ${isSignUpMode ? "" : "hidden"}`}
@@ -95,7 +113,7 @@ const Authentication = () => {
               </i>
               <input
                 type={showPassword1 ? "text" : "password"}
-                required
+                
                 id="passw1"
                 placeholder="Password"
               />
@@ -108,20 +126,21 @@ const Authentication = () => {
             </div>
             <input type="submit" value="Sign up" className="btn" />
             <p className="social-text">Or Sign up with a social platform</p>
-            <div className="social-media">
-              <a href="" className="social-icon">
-                <i className="fab fa-google">
-                  <FaGoogle></FaGoogle>
-                </i>
-              </a>
-            </div>
             <p className="account-text">
               Already have an account?{" "}
               <a href="#" onClick={handleToggleSignUp}>
-                Sign in
+              Sign in
               </a>
             </p>
           </form>
+          <div className="social-media">
+              <button onClick={signupUserUsingGoogle} className="social-icon">
+                <i className="fab fa-google">
+                  <FaGoogle></FaGoogle>
+                </i>
+              </button>
+            </div>
+          </div>
         </div>
 
         <div className="panels-container">

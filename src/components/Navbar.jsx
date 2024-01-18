@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import '../../public/css/Header.css';
 import { Link } from 'react-router-dom';
 
-const Navbar: React.FC = () => {
+const Navbar = () => {
     const [isOverlayActive, setIsOverlayActive] = useState(false);
 
     const openOverlay = () => {

@@ -1,12 +1,11 @@
-// index.tsx
-import { useEffect, useState} from 'react';
-import ReactDOM from 'react-dom';
+import React, { useEffect, useState } from 'react';
+import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
-import Router from './router/router.tsx';
+import Router from './router/router';
 import './App.css';
-import Loader from './components/Loader.tsx';
+import Loader from './components/Loader';
 import '../public/css/Loader.css';
-import Navbar from './components/Navbar.tsx';
+import Navbar from './components/Navbar';
 
 const Root = () => {
   const [showLoader, setShowLoader] = useState(false);
@@ -31,4 +30,8 @@ const Root = () => {
   );
 };
 
-ReactDOM.render(<Root />, document.getElementById('root'));
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <Root />
+  </React.StrictMode>,
+);

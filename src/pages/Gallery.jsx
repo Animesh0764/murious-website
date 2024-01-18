@@ -4,14 +4,14 @@ import '../../public/css/Gallery.css';
 import { Link } from 'react-router-dom';
 
 const Gallery = () => {
-  const slideRef = useRef<HTMLDivElement | null>(null);
+  const slideRef = useRef(null);
 
   useEffect(() => {
     slideRef.current = document.querySelector('.slide');
   }, []);
 
   const handleNextClick = () => {
-    const items = slideRef.current?.querySelectorAll('.item') as NodeListOf<HTMLElement>;
+    const items = slideRef.current?.querySelectorAll('.item');
     if (items && items.length > 0) {
       slideRef.current?.appendChild(items[0].cloneNode(true));
       slideRef.current?.removeChild(items[0]);
@@ -19,7 +19,7 @@ const Gallery = () => {
   };
 
   const handlePrevClick = () => {
-    const items = slideRef.current?.querySelectorAll('.item') as NodeListOf<HTMLElement>;
+    const items = slideRef.current?.querySelectorAll('.item');
     if (items && items.length > 0) {
       slideRef.current?.insertBefore(items[items.length - 1].cloneNode(true), items[0]);
       slideRef.current?.removeChild(items[items.length - 1]);

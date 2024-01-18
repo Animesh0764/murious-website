@@ -12,13 +12,6 @@ const Root = () => {
   const [showLoader, setShowLoader] = useState(false);
 
   useEffect(() => {
-    const hasVisitedBefore = localStorage.getItem('visitedBefore');
-
-    if (!hasVisitedBefore) {
-      setShowLoader(true);
-      localStorage.setItem('visitedBefore', 'true');
-    }
-
     const timeoutId = setTimeout(() => {
       setShowLoader(false);
     }, 2500);

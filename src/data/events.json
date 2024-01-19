@@ -31,30 +31,6 @@
             "tagline": "Craft your code to perfection at Murious 18.0",
             "price": 150,
             "readMoreLink": "/"
-        },
-        {
-            "id": 5,
-            "imageUrl": "../../public/images/IMG_5187.JPG",
-            "eventName": "HackSphere 5.0",
-            "tagline": "Enter the sphere of hacking excellence at Murious 18.0",
-            "price": 180,
-            "readMoreLink": "/"
-        },
-        {
-            "id": 6,
-            "imageUrl": "../../public/images/IMG_5187.JPG",
-            "eventName": "ByteBlast 2.0",
-            "tagline": "Blast through coding challenges at Murious 18.0",
-            "price": 250,
-            "readMoreLink": "/"
-        },
-        {
-            "id": 7,
-            "imageUrl": "../../public/images/IMG_5187.JPG",
-            "eventName": "Inventive Code-a-thon",
-            "tagline": "Invent, Code, Win: Murious 18.0 awaits your innovation",
-            "price": 220,
-            "readMoreLink": "/"
         }
     ],
 

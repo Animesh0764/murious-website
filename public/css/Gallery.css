@@ -4,8 +4,8 @@
     box-sizing: border-box;
 }
 
-body{
-    overflow: hidden;
+::-webkit-scrollbar {
+    display: none;
 }
 
 .container{

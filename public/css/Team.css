@@ -3,6 +3,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background: url('../images/teambg.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 
 .team-section {
@@ -20,20 +24,39 @@
     max-width: 1500px;
 }
 
-@media (max-width: 1200px) {
+.team-grid2 {
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    max-width: 1800px;
+}
+
+@media (max-width: 1300px) {
     .team-grid {
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        margin: 1rem auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+        justify-content: center;
+        max-width: 1200px;
     }
 }
 
 @media (max-width: 800px) {
     .team-grid {
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        margin: 1rem auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+        justify-content: center;
+        max-width: 750px;
     }
 }
 
 @media (max-width: 600px) {
     .team-grid {
-        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        max-width: 500px;
     }
 }

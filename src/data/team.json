@@ -1,0 +1,135 @@
+{ 
+    "mentors" : [
+        {
+            "id": 1,
+            "name": "Mayank Kumar",
+            "designation": "Mentor",
+            "imageUrl": "https://media.licdn.com/dms/image/D5603AQHcV6EORRwoMw/profile-displayphoto-shrink_200_200/0/1691335478746?e=1710979200&v=beta&t=bEXPckQTtN-iVlJou8Jag6N8l_diW35xRhcqM1GugdY",
+            "linkedinUrl": "https://www.linkedin.com/in/racinmk/",
+            "instagramUrl": "https://www.instagram.com/racinmk/"
+        },
+        {
+            "id": 2,
+            "name": "Aditya Sood",
+            "designation": "Mentor",
+            "imageUrl": "https://media.licdn.com/dms/image/D4D03AQFt4sjXev7FDA/profile-displayphoto-shrink_200_200/0/1668584452288?e=1710979200&v=beta&t=uqJrnFogiTutstTwGaqnawUK9VhwmKFTqtZ2TVLQmlA",
+            "linkedinUrl": "https://www.linkedin.com/in/aditya-s-140312233/",
+            "instagramUrl": ""
+        },
+        {
+            "id": 3,
+            "name": "Anshul Sharma",
+            "designation": "Mentor",
+            "imageUrl": "https://media.licdn.com/dms/image/D4D03AQGkyYYomTgE6w/profile-displayphoto-shrink_200_200/0/1670225491470?e=1710979200&v=beta&t=O_kU1ZacaqLXrNaSa0XbAPG2XLUR9KLn4jRN5g4FoB4",
+            "linkedinUrl": "https://www.linkedin.com/in/anshul-sharma-655817216/",
+            "instagramUrl": "https://www.instagram.com/anshul_03_/"
+        },
+        {
+            "id": 4,
+            "name": "Manas Bajpai",
+            "designation": "Mentor",
+            "imageUrl": "https://media.licdn.com/dms/image/D4D03AQFEovmErAbKlw/profile-displayphoto-shrink_200_200/0/1688559988133?e=1710979200&v=beta&t=iYN8jD3jmIon91DeCnAvWjp91hqrVWBT1tiVUFJJWPA",
+            "linkedinUrl": "https://www.linkedin.com/in/manas-bajpai/",
+            "instagramUrl": "https://www.instagram.com/manas.bajpai_1804/"
+        }
+    ],
+
+    "contributors" : [
+        {
+            "id": 1,
+            "name": "Animesh Singh",
+            "designation": "Web Developer",
+            "imageUrl": "../../public/images/IMG_2820.png",
+            "linkedinUrl": "https://www.linkedin.com/in/animesh07/",
+            "instagramUrl": "https://www.instagram.com/Animesh_0764/"
+        },
+        {
+            "id": 2,
+            "name": "Samson V Julius",
+            "designation": "Web Developer",
+            "imageUrl": "https://media.licdn.com/dms/image/D4D03AQE6lsn231fIBQ/profile-displayphoto-shrink_400_400/0/1692437738344?e=1709769600&v=beta&t=WMLA-a0PoOcKudoS4EOLkBWUcfc_dKcs8OK87qB2cfw",
+            "linkedinUrl": "https://www.linkedin.com/in/samson-vincent-julius/",
+            "instagramUrl": "https://www.instagram.com/sam.v_julius/"
+        },
+        {
+            "id": 3,
+            "name": "Yash Khatri",
+            "designation": "Web Developer",
+            "imageUrl": "https://media.licdn.com/dms/image/D5603AQGDQXGriwporg/profile-displayphoto-shrink_200_200/0/1703404863726?e=1710979200&v=beta&t=IkGPCpBvYD7euBi4jW5DWE12Lxa6Jw7Gc02c3tH1y3M",
+            "linkedinUrl": "https://www.linkedin.com/in/yash-khatri-29b956251/",
+            "instagramUrl": "https://www.instagram.com/yashkhatri99/"
+        },
+        {
+            "id": 4,
+            "name": "Srijan Saraswat",
+            "designation": "UI/UX Designer",
+            "imageUrl": "https://media.licdn.com/dms/image/D4D03AQF1BuULR9V5mg/profile-displayphoto-shrink_200_200/0/1701590576619?e=1710374400&v=beta&t=hSxjiXydy4lWsehTaAU2PO-jh2igNLNlV1_L600aixc",
+            "linkedinUrl": "https://www.linkedin.com/in/srijan-saraswat/",
+            "instagramUrl": "https://www.instagram.com/__.srijan_saraswat.__/"
+        },
+        {
+            "id": 5,
+            "name": "Chaitanya Anchal",
+            "designation": "App Developer",
+            "imageUrl": "https://media.licdn.com/dms/image/D4D03AQFs_I4hv-JigQ/profile-displayphoto-shrink_400_400/0/1699738089926?e=1710374400&v=beta&t=I9K5swarGL0-eGAhFXmX5Fz3Ba7r53J-awp-peueLQo",
+            "linkedinUrl": "https://www.linkedin.com/in/chaitanya-anchal/",
+            "instagramUrl": "https://www.instagram.com/_chaitanya_.31/"
+        },
+        {
+            "id": 6,
+            "name": "Dhaarna",
+            "designation": "Web Developer",
+            "imageUrl": "https://media.licdn.com/dms/image/D5603AQGpyEtKocU5fQ/profile-displayphoto-shrink_400_400/0/1705302782813?e=1710979200&v=beta&t=DhxdTHoClPvVzb8e6BZZKK3CWdAmrJub-7ieW5ei-8o",
+            "linkedinUrl": "https://www.linkedin.com/in/dhaarna-thakur-681061286",
+            "instagramUrl": "https://www.instagram.com/dhaarnathakur_"
+        },
+        {
+            "id": 7,
+            "name": "Devank",
+            "designation": "Web & App Dev",
+            "imageUrl": "https://media.licdn.com/dms/image/D4D03AQE8LzXB68Ttag/profile-displayphoto-shrink_400_400/0/1699001791925?e=1709769600&v=beta&t=nMYhfmbFebPq3RQuBJGXTFY52oAgEQbTdQt2TMzJWRw",
+            "linkedinUrl": "https://www.linkedin.com/in/devank-",
+            "instagramUrl": "https://www.instagram.com/dev_n_k_"
+        },
+        {
+            "id": 8,
+            "name": "Shivansh",
+            "designation": "Web & App Dev",
+            "imageUrl": "https://media.licdn.com/dms/image/D5603AQFWT91jXiHwQg/profile-displayphoto-shrink_400_400/0/1704621626973?e=1710374400&v=beta&t=A-wvtO7ny5Xmh8NykdIaNSmYPUjR8yzko9wa2lbywI4",
+            "linkedinUrl": "https://www.linkedin.com/in/shivansh-mahajan-a04301252/",
+            "instagramUrl": "https://www.instagram.com/shivansh2_55/"
+        },
+        {
+            "id": 9,
+            "name": "Aarya Gupta",
+            "designation": "Web & App Dev",
+            "imageUrl": "https://media.licdn.com/dms/image/D5603AQEkev3uuKqTvQ/profile-displayphoto-shrink_200_200/0/1705420052014?e=1710979200&v=beta&t=GICuwAHHKssu2eFj3-YjnJBXPcnXoFV-OajyPiSjw7A",
+            "linkedinUrl": "https://www.linkedin.com/in/aarya--gupta/",
+            "instagramUrl": "https://www.instagram.com/aaryaa_.0/"
+        },
+        {
+            "id": 10,
+            "name": "Kavya Sharma",
+            "designation": "Web & App Dev",
+            "imageUrl": "https://media.licdn.com/dms/image/D4E35AQGI5KZsQ-oD9A/profile-framedphoto-shrink_200_200/0/1698336772979?e=1706259600&v=beta&t=1XXg70inUmAoLxWXhiTv4pdwvgAKPx5AalyE1yjuXhI",
+            "linkedinUrl": "https://www.linkedin.com/in/kavya--sharma/",
+            "instagramUrl": "https://www.instagram.com/_kavyasharma.j.m/"
+        },
+        {
+            "id": 11,
+            "name": "Aditya Sharma",
+            "designation": "Web & App Dev",
+            "imageUrl": "https://media.licdn.com/dms/image/D5603AQHkJkp5SNR4KA/profile-displayphoto-shrink_800_800/0/1704624943244?e=1710374400&v=beta&t=hIQlxgXfoX0pTUur5b-uIaj-8IVKYaQiMtZaj4Epuo0",
+            "linkedinUrl": "https://www.linkedin.com/in/aditya-sharma-4901952a8",
+            "instagramUrl": "https://www.instagram.com/hey.ady_/"
+        },
+        {
+            "id": 12,
+            "name": "Arpit Sharma",
+            "designation": "Web & App Dev",
+            "imageUrl": "https://media.licdn.com/dms/image/D4E03AQE4IwSAiENJoA/profile-displayphoto-shrink_800_800/0/1704906819025?e=1710374400&v=beta&t=0zteZGeRU4p77OSdxpB0MuJNlYSV-Bf_LwHRc3y6UH4",
+            "linkedinUrl": "https://www.linkedin.com/in/arpit-sharma-b1a2892a9/",
+            "instagramUrl": "https://www.instagram.com/arpitsharma9960/"
+        }
+    ]
+}

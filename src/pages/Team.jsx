@@ -7,7 +7,7 @@ const Team = () => {
     return (
         <div className="team-container">
             <div className="team-section">
-                <h2>Mentors</h2>
+                <h1>Mentors</h1>
                 <div className="team-grid">
                     {mentors.map((member) => (
                         <TeamCard key={member.id} {...member} />
@@ -18,8 +18,8 @@ const Team = () => {
             <br />
 
             <div className="team-section">
-                <h2>Contributors</h2>
-                <div className="team-grid2">
+                <h1>Contributors</h1>
+                <div className="team-grid">
                     {contributors.map((member) => (
                         <TeamCard key={member.id} {...member} />
                     ))}

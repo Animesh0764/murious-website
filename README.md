@@ -75,8 +75,6 @@ The project has the following structure:
 
 - **`vite.config.js`**: Configuration file for Vite.
 
-- **`tsconfig.json`**: TypeScript configuration file.
-
 - **`...`**: Other configuration files, documentation, etc.
 
 ## Database

@@ -1,0 +1,47 @@
+{
+    "upcoming" : [
+        {
+            "id": 1,
+            "imageUrl": "../../public/images/IMG_5187.JPG",
+            "eventName": "Expanse 3.0",
+            "tagline": "Transform ideas into tech marvels at Murious 18.0",
+            "price": 250,
+            "readMoreLink": "/"
+        },
+        {
+            "id": 2,
+            "imageUrl": "../../public/images/IMG_5187.JPG",
+            "eventName": "Tech Fusion 2.0",
+            "tagline": "Explore the intersection of creativity and technology at Murious 18.0",
+            "price": 200,
+            "readMoreLink": "/"
+        },
+        {
+            "id": 3,
+            "imageUrl": "../../public/images/IMG_5187.JPG",
+            "eventName": "InnoHacks 4.0",
+            "tagline": "Fuel your passion for innovation at Murious 18.0",
+            "price": 300,
+            "readMoreLink": "/"
+        },
+        {
+            "id": 4,
+            "imageUrl": "../../public/images/IMG_5187.JPG",
+            "eventName": "CodeCraft 1.0",
+            "tagline": "Craft your code to perfection at Murious 18.0",
+            "price": 150,
+            "readMoreLink": "/"
+        }
+    ],
+
+    "ongoing" : [
+        {
+            "id": 1,
+            "imageUrl": "../../public/images/IMG_5187.JPG",
+            "eventName": "Inventive Code-a-thon",
+            "tagline": "Invent, Code, Win: Murious 18.0 awaits your innovation",
+            "price": 220,
+            "readMoreLink": "/"
+        }
+    ]
+}

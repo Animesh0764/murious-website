@@ -1,6 +1,6 @@
 .slider{
-    height: 100vh;
-    margin-top: 20px;
+    height: 86vh;
+    margin-top: 15px;
     position: relative;
 }
 
@@ -104,7 +104,7 @@
 
 .thumbnail{
     position: absolute;
-    bottom: 50px;
+    bottom: 40px;
     z-index: 11;
     display: flex;
     gap: 10px;
@@ -151,10 +151,3 @@
     }
 }
 
-.slider .list .item .content h2{
-    font-size: 60px;
-}
-
-.arrows{
-    top: 10%;
-}

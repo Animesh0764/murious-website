@@ -1,8 +1,41 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "../../public/css/Hero.css";
 import Image from "../../public/images/muriouslogo.webp";
 
 const Hero = () => {
+
+  //animating the title
+  const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+  const h1Ref = useRef(null);
+  const [intervalId, setIntervalId] = useState(null);
+
+  const handleMouseOver = () => {
+    let iteration = 0;
+
+    clearInterval(intervalId);
+
+    const newIntervalId = setInterval(() => {
+      h1Ref.current.innerText = h1Ref.current.innerText
+        .split("")
+        .map((letter, index) => {
+          if (index < iteration) {
+            return h1Ref.current.dataset.value[index];
+          }
+
+          return letters[Math.floor(Math.random() * 26)];
+        })
+        .join("");
+
+      if (iteration >= h1Ref.current.dataset.value.length) {
+        clearInterval(newIntervalId);
+      }
+
+      iteration += 1 / 3;
+    }, 30);
+
+    setIntervalId(newIntervalId);
+  };
+
   useEffect(() => {
     const scrollers = document.querySelectorAll(".scroller");
 
@@ -34,7 +67,13 @@ const Hero = () => {
 
   return (
     <div className="hero">
-      <h1>Murious 18.0</h1>
+      <div className="title-container">
+        <h1
+          ref={h1Ref}
+          data-value="Murious 18.0"
+          onMouseOver={handleMouseOver}
+        >Murious 18.0</h1>
+      </div>
       <div className="body">
         <div className="scroller" data-direction="up" data-speed="slow">
           <div className="scroller__inner">

@@ -103,7 +103,8 @@
     width: 100%;
     height: 2px;
     background: linear-gradient(90deg, transparent, #df4adf);
-    animation: animate1 1s linear infinite;
+    animation: animate1 1.5s linear infinite;
+    animation-delay: 0.25s;
 }
 
 @keyframes animate1 {
@@ -122,8 +123,8 @@
     width: 2px;
     height: 100%;
     background: linear-gradient(180deg, transparent, #df4adf);
-    animation: animate2 1s linear infinite;
-    animation-delay: 0.25s;
+    animation: animate2 1.5s linear infinite;
+    animation-delay: 0.50s;
 }
 
 @keyframes animate2 {
@@ -142,8 +143,8 @@
     width: 100%;
     height: 2px;
     background: linear-gradient(270deg, transparent, #df4adf);
-    animation: animate3 1s linear infinite;
-    animation-delay: 0.50s;
+    animation: animate3 1.5s linear infinite;
+    animation-delay: 0.75s;
 }
 
 @keyframes animate3 {
@@ -162,8 +163,8 @@
     width: 2px;
     height: 100%;
     background: linear-gradient(360deg, transparent, #df4adf);
-    animation: animate4 1s linear infinite;
-    animation-delay: 0.75s;
+    animation: animate4 1.5s linear infinite;
+    animation-delay: 1s;
 }
 
 @keyframes animate4 {

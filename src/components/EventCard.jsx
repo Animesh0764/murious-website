@@ -10,7 +10,7 @@ const EventCard = ({ imageUrl, eventName, tagline, price, readMoreLink }) => {
                 <div className="event-card-background"></div>
                 <div className="event-card-details">
                     <div className="event-card-text">
-                        <h1>{eventName} • &#x20B9;{price}</h1>
+                        <h1 className='event-name'>{eventName} • &#x20B9;{price}</h1>
                         <p>{tagline}</p>
                     </div>
                     <div className="read-more-container">

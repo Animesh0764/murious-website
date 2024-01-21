@@ -1,0 +1,93 @@
+.scroller__inner {
+    padding-block: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .scroller[data-speed="fast"] {
+    --_animation-duration: 20s;
+  }
+  
+  .scroller[data-speed="slow"] {
+    --_animation-duration: 60s;
+  }
+  /* Adjustments for vertical scroll */
+  
+  .scroller[data-animated="true"] {
+    overflow: hidden;
+    -webkit-mask: linear-gradient(
+      180deg, /* Change from 90deg to 180deg for vertical scroll */
+      transparent,
+      white 0%,
+      white 80%,
+      transparent
+    );
+    mask: linear-gradient(180deg, transparent, white 0%, white 80%, transparent);
+  }
+  
+  .scroller[data-animated="true"] .scroller__inner {
+    height: max-content; /* Change from width to height for vertical scroll */
+    flex-wrap: nowrap;
+    animation: scroll var(--_animation-duration, 40s) var(--_animation-direction, forwards) linear infinite;
+  }
+  
+  @keyframes scroll {
+    to {
+      transform: translateY(calc(-50% - 0.5rem)); /* Adjust translateY for vertical scroll */
+    }
+  }
+  
+  /* Additional adjustments for vertical scroll */
+  .scroller[data-direction="down"] {
+    --_animation-direction: forwards; /* Change from reverse to forwards for vertical scroll */
+  }
+  
+  .scroller[data-direction="up"] {
+    --_animation-direction: reverse; /* Change from forwards to reverse for vertical scroll */
+  }
+  
+  
+  
+  /* general styles */
+  
+  :root{
+    --sponsor-col: 7;
+  }
+  
+  .body {
+    display: grid;
+    grid-template-columns: repeat(var(--sponsor-col), 1fr);
+    grid-gap: 20px;
+    /* place-content: center; */
+    z-index: -2;
+  }
+  .scroller{
+    width: 100%;
+    max-height: 90vh;
+  }
+  img{
+    max-width: 300px;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+  }
+  @font-face {
+    font-family: "Switzer";
+    src: url("../fonts/Switzer-Variable.ttf");
+  }
+  h1{
+    color: white;
+    background-color: none;
+    font-size: 100px;
+    font-family: Switzer;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    
+  }
+  
+  

@@ -7,12 +7,14 @@ import Events from '../pages/Events';
 import Gallery from "../pages/Gallery"
 import Authentication from "../pages/Authentication"
 import RegistrationForm from "../pages/RegistrationForm";
+import Game from "../pages/Game";
 
 function Router() {
     return (
             <Routes>
                 <Route path='/' element={<Home />} />
                 <Route path='/about' element={<About />} />
+                <Route path='/play' element={<Game />} />
                 <Route path='/team' element={<Team />} />
                 <Route path='/gallery' element={<Gallery />} />
                 <Route path='/events' element={<Events />} />

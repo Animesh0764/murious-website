@@ -1,0 +1,279 @@
+@font-face {
+    font-family: "Switzer";
+    src: url("../fonts/Switzer-Variable.ttf");
+  }
+
+.footer-content {
+    background-color: #000000;
+    color: #c9c9c9;
+    font-size: .8rem;
+    padding-bottom: 10px;
+    margin-top: 5px;
+    font-family: Switzer;
+  }
+  
+  .footer-wrapper {
+    width: 80vw;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  
+  .jyc-tmp {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  
+  .footer-wrapper hr {
+    width: 100%;
+    height: 0px;
+    background-color: #919191;
+    background: #919191;
+    border: 0.5px solid #919191;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-logotmp {
+    width: 150px;
+    height: 63px;
+  }
+  .links-wrapper-1 .footer-heading {
+    margin-right: 4.7vw;
+  }
+  .links-wrapper-2 .footer-heading {
+    margin-right: 2vw;
+  }
+  .links-wrapper-3 .footer-heading {
+    margin-right: 2.25vw;
+  }
+  
+  .links-wrapper-1 .tsmp{
+    margin-right: 2.2vw;
+  }
+  .links-wrapper-1 .eeh{
+    margin-right: 3vw;
+  }
+  .links-wrapper-1 .lad{
+    margin-right: 3vw;
+  }
+  .links-wrapper-1 .tam{
+    margin-right: 3vw;
+  }
+  .links-wrapper-1 .cad{
+    margin-right: 2vw;
+  }
+  .links-wrapper-1 .sports{
+    margin-right: 2vw;
+  }
+  
+  .links-wrapper-2 .pem{
+    margin-right: 4.6vw;
+  }
+  
+  .links-wrapper-2 .rah{
+    margin-right: 5vw;
+  }
+  
+  .links-wrapper-2 .map{
+    margin-right: 4vw;
+  }
+  
+  .links-wrapper-2 .ca{
+    margin-right: 5vw;
+  }
+  .links-wrapper-2 .dispi{
+    margin-right: 4.7vw;
+  }
+  
+  .links-wrapper-3 .jyc-president-email{
+    margin-right: 3vw;
+  }
+  .links-wrapper-3 .support-email{
+    margin-right: 3vw;
+  }
+  
+  .footer-wrapper ul {
+    list-style: none;
+    padding-inline-start: 0px;
+  }
+  
+  
+  .footer-wrapper ul a {
+    color: #c0c0c0;
+    text-decoration: none;
+  }
+  .footer-links-wrapper .footer-heading {
+    font-size: 12px;
+    font-weight: 600;
+    color: #d3d3d3;
+  }
+  .upper-text-container {
+    border-bottom: 1px solid #d2d2d7;
+    padding: 17px 0 10px;
+    margin-bottom: 20px;
+  }
+  .upper-text-container a {
+    color: #515154;
+  }
+  .links-wrapper-4,
+  .links-wrapper-4-active {
+    display: none;
+  }
+  .links-wrapper-3,
+  .links-wrapper-2,
+  .links-wrapper-1 {
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+  }
+  .links-wrapper-3 ul,
+  .links-wrapper-2 ul,
+  .links-wrapper-1 ul {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .footer-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #828282;
+  }
+  .footer-bottom a {
+    text-decoration: none;
+    color: #828282;
+  }
+  .social-icons {
+    display: flex;
+    gap: 2rem;
+  }
+  .links-wrapper-1 .footer-heading .more-options-m,
+  .links-wrapper-2 .footer-heading .more-options-m,
+  .links-wrapper-3 .footer-heading .more-options-m,
+  .links-wrapper-4 .footer-heading .more-options-m {
+    display: none;
+  }
+  
+  
+  /*Media Query*/
+  
+  @media (max-width: 768px) {
+    .links-wrapper-1 ul,
+    .links-wrapper-2 ul,
+    .links-wrapper-3 ul,
+    .links-wrapper-4 ul {
+      display: none;
+    }
+    .footer-links-wrapper .footer-heading {
+      padding: 10px 0;
+      border-bottom: 1px solid #ccc;
+    }
+    .links-wrapper-1 .footer-heading {
+      border-top: 1px solid #ccc;
+      margin-top: 7px;
+      padding: 10px 0;
+    }
+    .footer-links-wrapper .footer-heading:after {
+      padding-left: 10px;
+      position: absolute;
+      right: 25px;
+    }
+    .links-wrapper-4,
+    .links-wrapper-3,
+    .links-wrapper-2,
+    .links-wrapper-1 {
+      display: inline;
+    }
+  
+    hr {
+      display: none;
+    }
+    .footer-bottom {
+      margin-top: 1rem;
+      flex-direction: column;
+    }
+  
+    .links-wrapper-4-active {
+      display: inline;
+    }
+    .links-wrapper-1-active ul,
+    .links-wrapper-2-active ul,
+    .links-wrapper-3-active ul,
+    .links-wrapper-4-active ul {
+      display: inline-flex;
+      gap: 10px;
+      flex-direction: column;
+      padding-top: 5px;
+      margin-left: 15px;
+      width: 100%;
+    }
+    .social-icons {
+      display: none;
+    }
+    .links-wrapper-1 .footer-heading .more-options-m,
+    .links-wrapper-2 .footer-heading .more-options-m,
+    .links-wrapper-3 .footer-heading .more-options-m,
+    .links-wrapper-4 .footer-heading .more-options-m {
+      display: flex;
+      margin-right: 1rem;
+    }
+    .links-wrapper-1 .footer-heading,
+    .links-wrapper-2 .footer-heading,
+    .links-wrapper-3 .footer-heading,
+    .links-wrapper-4 .footer-heading {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .links-wrapper-1-active .footer-heading .more-options-m .more-option-show,
+    .links-wrapper-2-active .footer-heading .more-options-m .more-option-show,
+    .links-wrapper-3-active .footer-heading .more-options-m .more-option-show,
+    .links-wrapper-4-active .footer-heading .more-options-m .more-option-show {
+      display: none;
+    }
+    .links-wrapper-1 .footer-heading .more-options-m .more-option-hide,
+    .links-wrapper-2 .footer-heading .more-options-m .more-option-hide,
+    .links-wrapper-3 .footer-heading .more-options-m .more-option-hide,
+    .links-wrapper-4 .footer-heading .more-options-m .more-option-hide {
+      display: none;
+    }
+  
+    .links-wrapper-1-active .footer-heading .more-options-m .more-option-hide,
+    .links-wrapper-2-active .footer-heading .more-options-m .more-option-hide,
+    .links-wrapper-3-active .footer-heading .more-options-m .more-option-hide,
+    .links-wrapper-4-active .footer-heading .more-options-m .more-option-hide {
+      display: contents;
+    }
+    .links-wrapper-1 .footer-heading {
+      margin-right: 0vw;
+    }
+    .links-wrapper-2 .footer-heading {
+      margin-right: 0vw;
+    }
+    .links-wrapper-3 .footer-heading {
+      margin-right: 0vw;
+    }
+    .footer-logotmp {
+      width: 85px;
+      height: 38px;
+    }
+    .footer-logojyc {
+      width: 80px;
+      height: 40px;
+    }
+    .jyc-text {
+      font-size: 10px;
+    }
+    .tmp-text {
+      font-size: 10px;
+    }
+    .jyc-tmp {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+  

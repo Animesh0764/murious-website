@@ -67,25 +67,25 @@ function Footer() {
               <div onClick={onClickFooter1} className="more-options-m"><div className="more-option-show">+</div><div className="more-option-hide">-</div></div></div>
             <ul>
               <li className="tsmp">
-              <Link to='/'>Technical Sciences, Movies and Photography</Link>
+              <Link to='http://jyc.co.in/'>Technical Sciences, Movies and Photography</Link>
               </li>
               <li className="eeh">
-                <Link to='/'>Environment, Ecology and Health</Link>
+                <Link to='http://jyc.co.in/'>Environment, Ecology and Health</Link>
               </li>
               <li className="lad">
-                <Link to='/'>Literary and Debating</Link>
+                <Link to='http://jyc.co.in/'>Literary and Debating</Link>
               </li>
               <li className="tam">
-                <Link to='/'>Theater and Music</Link>
+                <Link to='http://jyc.co.in/'>Theater and Music</Link>
               </li>
               <li className="cad">
-                <Link to='/'>Cultural and Dance</Link>
+                <Link to='http://jyc.co.in/'>Cultural and Dance</Link>
               </li>
               <li className="sports">
-                <Link to='/'>Sports</Link>
+                <Link to='http://jyc.co.in/'>Sports</Link>
               </li>
               <li className="koshish">
-                <Link to='/'>Koshish</Link>
+                <Link to='http://jyc.co.in/'>Koshish</Link>
               </li>
             </ul>
           </div>
@@ -97,22 +97,22 @@ function Footer() {
               <div onClick={onClickFooter2} className="more-options-m"><div className="more-option-show">+</div><div className="more-option-hide">-</div></div></div>
             <ul>
               <li className="pem">
-                <Link to='/'>Procurement and Event Management</Link>
+                <Link to='http://jyc.co.in/'>Procurement and Event Management</Link>
               </li>
               <li className="rah">
-                <Link to='/'>Registration and Hospitality</Link>
+                <Link to='http://jyc.co.in/'>Registration and Hospitality</Link>
               </li>
               <li className="map">
-                <Link to='/'>Media and Publicity</Link>
+                <Link to='http://jyc.co.in/'>Media and Publicity</Link>
               </li>
               <li className="ca">
-                <Link to='/'>Creative Arts</Link>
+                <Link to='http://jyc.co.in/'>Creative Arts</Link>
               </li>
               <li className="dispi">
-                <Link to='/'>Disciplinary</Link>
+                <Link to='http://jyc.co.in/'>Disciplinary</Link>
               </li>
               <li className="money">
-                <Link to='/'>Finance</Link>
+                <Link to='http://jyc.co.in/'>Finance</Link>
               </li>
             </ul>
           </div>

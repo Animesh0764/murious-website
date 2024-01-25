@@ -13,12 +13,12 @@
 }
 
 .events-scroll-container {
-    margin: 1rem auto;
+    margin: 1rem;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
-    gap: 20px;
+    /* grid-template-columns: repeat(auto-fill, minmax(360px, 1fr)); */
+    gap: 0px;
     justify-content: center;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
+    /* overflow-x: auto; */
+    /* scroll-snap-type: x mandatory; */
+    /* -webkit-overflow-scrolling: touch; */
 }

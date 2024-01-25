@@ -15,8 +15,8 @@
 
 .event-card-container {
   height: 436px;
-  width: 200%;
-  background-size: cover;
+  width: 95%;
+  background-size: contain;
   position: relative;
   overflow: hidden;
   border-radius: 15px;
@@ -26,7 +26,7 @@
 
 .event-card-content {
   position: absolute;
-  bottom: -0.1rem;
+  bottom: 0rem;
   height: 80px;
   width: 100%;
   border-radius: 15px;
@@ -44,6 +44,7 @@
   text-align: left;
   color: #fff;
   line-height: 2rem;
+  padding-bottom: -2rem;
 }
 
 .read-more-container {

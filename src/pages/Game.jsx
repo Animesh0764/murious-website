@@ -1,55 +1,41 @@
-import React from 'react'
-import Tetris from 'react-tetris'
-import '../../public/css/Game.css'
+import React, { useState, useEffect } from "react";
+import "../../public/css/Game.css";
+import { JigsawPuzzle } from "react-jigsaw-puzzle/lib";
+import "react-jigsaw-puzzle/lib/jigsaw-puzzle.css";
+import useWindowSize from "react-use/lib/useWindowSize";
+import Confetti from "react-confetti";
+import imageData from "../data/puzzle.json"; // Import your JSON file
 
 const Game = () => {
-    return (
-        <div>
-            <h1>Tetris</h1>
-            <Tetris
-            keyboardControls={{
-                // Default values shown here. These will be used if no
-                // `keyboardControls` prop is provided.
-                down: 'MOVE_DOWN',
-                left: 'MOVE_LEFT',
-                right: 'MOVE_RIGHT',
-                space: 'HARD_DROP',
-                z: 'FLIP_COUNTERCLOCKWISE',
-                x: 'FLIP_CLOCKWISE',
-                up: 'FLIP_CLOCKWISE',
-                p: 'TOGGLE_PAUSE',
-                c: 'HOLD',
-                shift: 'HOLD'
-            }}
-            >
-            {({
-                HeldPiece,
-                Gameboard,
-                PieceQueue,
-                points,
-                linesCleared,
-                state,
-                controller
-            }) => (
-                <div>
-                <HeldPiece />
-                <div>
-                    <p>Points: {points}</p>
-                    <p>Lines Cleared: {linesCleared}</p>
-                </div>
-                <Gameboard />
-                <PieceQueue />
-                {state === 'LOST' && (
-                    <div>
-                    <h2>Game Over</h2>
-                    <button onClick={controller.restart}>New game</button>
-                    </div>
-                )}
-                </div>
-            )}
-            </Tetris>
-        </div>
-    )
-}
+  const { width, height } = useWindowSize();
+  const [isSolved, setIsSolved] = useState(false);
+  const [shuffledImages, setShuffledImages] = useState([]);
 
-export default Game
+  useEffect(() => {
+    // Extract image URLs from the JSON
+    const imageUrls = imageData.puzzle.map(item => item.imageUrl);
+    // Shuffle the array of image URLs
+    const shuffled = [...imageUrls].sort(() => Math.random() - 0.5);
+    setShuffledImages(shuffled);
+  }, []);
+
+  const handleSolved = () => {
+    setIsSolved(true);
+  };
+
+  return (
+    <div className="puzzle-page">
+      <JigsawPuzzle
+        imageSrc={shuffledImages[0]} // Use the first shuffled image
+        rows={2}
+        columns={2}
+        onSolved={handleSolved}
+      />
+      <img src={shuffledImages[0]} alt="puzzle" className="puzzle-image" />
+
+      {isSolved && <Confetti width={width} height={height} />}
+    </div>
+  );
+};
+
+export default Game;

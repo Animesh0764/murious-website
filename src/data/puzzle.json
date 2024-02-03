@@ -1,0 +1,20 @@
+{
+    "puzzle": [
+        {
+            "id": "1",
+            "imageUrl": "../../public/images/IMG_5187.JPG"
+        },
+        {
+            "id": "2",
+            "imageUrl": "../../public/images/IMG_3954.JPG"
+        },
+        {
+            "id": "3",
+            "imageUrl": "../../public/images/IMG_3955.JPG"
+        },
+        {
+            "id": "4",
+            "imageUrl": "../../public/images/IMG_3953.JPG"
+        }
+    ]
+}

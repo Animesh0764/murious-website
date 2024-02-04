@@ -29,6 +29,7 @@
     "react-tetris": "^0.4.0",
     "react-use": "^17.5.0",
     "slick-carousel": "^1.8.1",
+    "styled-components": "^6.1.8",
     "swiper": "^11.0.5",
     "three": "^0.160.0"
   },

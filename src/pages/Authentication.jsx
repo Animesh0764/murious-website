@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "../../public/css/Auth.css";
 import Murious from "../../public/images/muriouslogo.webp";
 import { FaEnvelope, FaLock, FaGoogle } from "react-icons/fa";
@@ -11,6 +11,21 @@ const Authentication = () => {
   const [isSignUpMode2, setSignUpMode2] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
   const [showPassword1, setShowPassword1] = useState(false);
+  const [isMobileView, setIsMobileView] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobileView(window.innerWidth <= 696);
+    };
+
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   
 
   const handleToggleSignUp = () => {
@@ -41,7 +56,12 @@ const Authentication = () => {
   const firebase = useFirebase();
 
   return (
+
+    
+
     <div className="sign-body">
+      {isMobileView && <div className="error-msg" style={{ textAlign: 'center' }}>Please use a desktop/laptop to authenticate yourself. Thanks</div>}
+      {!isMobileView && (
       <div
         className={`sign-container ${isSignUpMode ? "sign-up-mode" : ""} ${
           isSignUpMode2 ? "sign-up-mode2" : ""
@@ -181,6 +201,7 @@ const Authentication = () => {
           </div>
         </div>
       </div>
+      )}
     </div>
   );
 };

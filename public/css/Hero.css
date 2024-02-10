@@ -62,7 +62,14 @@
     grid-gap: 20px;
     /* place-content: center; */
     z-index: -2;
+    width: 100%;
+    opacity: 0.4;
   }
+
+  .hero{
+    position: relative;
+  }
+
   .scroller{
     width: 100%;
     max-height: 90vh;
@@ -78,13 +85,21 @@
     src: url("../fonts/Switzer-Variable.ttf");
   }
   h1{
-    color: white;
+    color: rgb(255, 255, 255);
     background-color: none;
-    font-size: 100px;
+    font-size: 150px;
     font-family: Switzer;
     /* text-align: center; */
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 2;
+    z-index: 10;
+  }
+
+  .title-container{
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }

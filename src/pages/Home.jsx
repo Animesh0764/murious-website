@@ -1,12 +1,12 @@
 import Hero from "../components/Hero"
-// import Sponsors from "../components/Sponsors"
+import Sponsors from "../components/Sponsors"
 import Footer from "../components/Footer"
 
 const Home = () => {
     return (
         <div>
             <Hero />
-            {/* <Sponsors /> */}
+            <Sponsors />
             <Footer />
         </div>
         

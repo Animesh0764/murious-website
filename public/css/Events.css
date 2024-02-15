@@ -12,13 +12,54 @@
     text-align: center;
 }
 
-.events-scroll-container {
+/* .events-scroll-container {
     margin: 1rem;
     display: grid;
-    /* grid-template-columns: repeat(auto-fill, minmax(360px, 1fr)); */
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
     gap: 0px;
     justify-content: center;
-    /* overflow-x: auto; */
-    /* scroll-snap-type: x mandatory; */
-    /* -webkit-overflow-scrolling: touch; */
-}
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+} */
+
+.carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 1s ease;
+  }
+  
+  .image-container img {
+    width: calc(90% / 3);
+    flex-shrink: 0;
+    margin: 1rem;
+  }
+  
+  .prev,
+  .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 9999;
+  }
+  
+  .prev {
+    left: 0;
+  }
+  
+  .next {
+    right: 0;
+  }
+  

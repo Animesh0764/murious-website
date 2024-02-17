@@ -3,6 +3,7 @@ import { getAnalytics } from "firebase/analytics";
 import { getAuth, GoogleAuthProvider } from 'firebase/auth';
 import { createContext } from "react";
 import { useContext } from "react";
+import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
     apiKey: "AIzaSyB_aYNNLmvlTaQWLx_cVRPx2nFVJdRcWMM",
@@ -16,6 +17,8 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 const firebaseAuth = getAuth(app);
+
+const db = getFirestore(app);
 
 const FirebaseContext = createContext(null);
 

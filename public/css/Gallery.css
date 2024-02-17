@@ -134,6 +134,7 @@
     border: 1px solid #000;
     transition: 0.3s;
     color: #000;
+    background-color: #fff;
 }
 
 .button button:hover {
@@ -167,7 +168,7 @@
     }
 
     .container .slide .item {
-        width:;
+        width: 10%;
     }
 
     .item .content {

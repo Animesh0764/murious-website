@@ -84,10 +84,10 @@
     font-family: "Switzer";
     src: url("../fonts/Switzer-Variable.ttf");
   }
-  h1{
+  .front-title{
     color: rgb(255, 255, 255);
     background-color: none;
-    font-size: 150px;
+    font-size: 100px;
     font-family: Switzer;
     /* text-align: center; */
     display: flex;
@@ -102,4 +102,15 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+
+  .back-title{
+    z-index: -2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 150px;
+    font-family: Switzer;
+    color: rgba(0, 0, 0);
   }

@@ -80,9 +80,13 @@ const Hero = () => {
 
   return (
     <div className="hero">
+      <h1 className="back-title">
+          Murious 18.0
+        </h1>
       <div className="title-container">
         <h1
           ref={h1Ref}
+          className="front-title"
           data-value="Murious 18.0"
           // onMouseOver={handleMouseOver}
           onMouseEnter={handleMouseOver}

@@ -1,0 +1,56 @@
+@font-face {
+    font-family: "Switzer";
+    src: url("../../public/fonts/Switzer-Variable.ttf");
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	/* box-sizing: border-box; */
+}
+
+body {
+	overflow-y: visible;
+	overflow-x: hidden;
+}
+
+#container {
+	height: 100vh;
+	/* set width based on sections */
+	width: 400%;
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.horizontal-section {
+	background-color: black;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100vh;
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    margin: 2rem;
+}
+
+
+.heading {
+	font-family: "Switzer";
+	font-size: 8vw;
+	font-weight: 300;
+	color: white;
+	letter-spacing: 1vw;
+	text-transform: uppercase;
+}
+
+.events-heading {
+    margin-top: 5rem;
+    font-family: "Switzer";
+    font-size: 4vw;
+    /* font-weight: 300; */
+    color: white;
+    letter-spacing: 1vw;
+    text-transform: uppercase;
+}

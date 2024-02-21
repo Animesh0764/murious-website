@@ -1,0 +1,44 @@
+@font-face {
+  font-family: "Switzer";
+  src: url("../../../public/fonts/Switzer-Variable.ttf");
+}
+
+.event-page-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  .event-poster {
+    width: 20%;
+  }
+  .event-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    font-family: Switzer;
+  }
+  .event-title {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    font-family: Switzer;
+  }
+  .e-date {
+    font-size: 2rem;
+    color: #df4adf;
+    margin-bottom: 2rem;
+    font-family: Switzer;
+  }
+  .event-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .event-image {
+    max-width: 15%;
+    max-height: 100%;
+    object-fit: contain;
+    margin: 1rem;
+  }
+  

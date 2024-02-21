@@ -1,0 +1,11 @@
+.mov-night{
+    /* padding-top: 10rem; */
+  background-color: #2c2c2c;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5rem;
+}
+.header-bg-for-white{
+    width: 100%;
+    margin-bottom: 3rem;
+}

@@ -8,6 +8,7 @@ import Gallery from "../pages/Gallery"
 import Authentication from "../pages/Authentication"
 import RegistrationForm from "../pages/RegistrationForm";
 import Game from "../pages/Game";
+import Expanse from "../eventsPages/Expanse";
 
 function Router() {
     return (
@@ -21,6 +22,7 @@ function Router() {
                 <Route path='/registration' element={<RegistrationForm />} />
                 <Route path='/gallery/hackathon' element={<SliderHackathon />} />
                 <Route path='/signin' element={<Authentication />} />
+                <Route path='/expanse' element={<Expanse />} />
             </Routes>
     )
 }

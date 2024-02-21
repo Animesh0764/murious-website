@@ -1,18 +1,12 @@
 // App.tsx
-import { Route, Routes } from 'react-router-dom';
-import Gallery from './pages/Gallery';
-import Home from './pages/Home';
-import About from './pages/About';
+import Router from './router/router';
 import { FirebaseProvider } from './context/firebase';
+import Router from './router/router';
 
 function App() {
   return (
     <FirebaseProvider>
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/about' element={<About />} />
-        <Route path='/gallery' element={<Gallery />} />
-      </Routes>
+      <Router/>
     </FirebaseProvider>
   );
 }

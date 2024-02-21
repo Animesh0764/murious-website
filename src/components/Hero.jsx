@@ -80,8 +80,7 @@ const Hero = () => {
 
   return (
     <div className="hero">
-      <h1 className="back-title">
-          Murious 18.0
+      <h1 className="back-title">   
         </h1>
       <div className="title-container">
         <h1

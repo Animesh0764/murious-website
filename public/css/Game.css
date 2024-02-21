@@ -1,28 +1,48 @@
-/* for the heading */
 .tag {
 	text-align: center;
 	color: green;
 	margin: 2rem;
 }
 
-/* for the jigsaw puzzle container */
 .jigsaw-puzzle {
 	width: 35%;
-	height: 35%;
+	height: auto; /* Change to auto to maintain aspect ratio */
 	border: 2px solid black;
 	margin: auto;
 	box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.25);
+	transition: transform 0.5s ease;
 }
 
 .puzzle-page{
     display: flex;
+    flex-direction: column; /* Change to column to stack puzzle and image vertically */
+    align-items: center; /* Center items horizontally */
     margin: 10%;
 }
 
 .puzzle-image{
     width: 38%;
-	height: 38%;
+	height: auto; /* Change to auto to maintain aspect ratio */
 	border: 2px solid black;
-	margin: auto;
-	box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.25);   
+	margin: 2rem auto; /* Adjust margin to provide space between puzzle and image */
+	box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.25);
+    transition: transform 0.5s ease;
+}
+
+@media (max-width: 768px) {
+    .jigsaw-puzzle,
+    .puzzle-image {
+        width: 70%;
+        height: auto; /* Change to auto to maintain aspect ratio */
+        margin-top: 10%;
+    }
+}
+
+@media (max-width: 480px) {
+    .jigsaw-puzzle,
+    .puzzle-image {
+        width: 90%;
+        height: auto; /* Change to auto to maintain aspect ratio */
+        margin-top: 20%;
+    }
 }

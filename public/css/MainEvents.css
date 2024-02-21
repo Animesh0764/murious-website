@@ -4,53 +4,66 @@
 }
 
 * {
-	margin: 0;
-	padding: 0;
-	/* box-sizing: border-box; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Enable box-sizing for all elements */
 }
 
 body {
-	overflow-y: visible;
-	overflow-x: hidden;
+    overflow-y: visible;
+    overflow-x: hidden;
+    margin: 0; /* Remove default body margin */
 }
 
 #container {
-	height: 100vh;
-	/* set width based on sections */
-	width: 400%;
-	display: flex;
-	flex-wrap: nowrap;
+    height: 100vh;
+    width: 100%; /* Set container width to 100% */
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto; /* Allow horizontal scrolling for smaller screens */
 }
 
 .horizontal-section {
-	background-color: black;
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	height: 100vh;
-	width: 50%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-    margin: 2rem;
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    min-width: 100%; /* Ensure each section takes up full width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1rem;
 }
-
 
 .heading {
-	font-family: "Switzer";
-	font-size: 8vw;
-	font-weight: 300;
-	color: white;
-	letter-spacing: 1vw;
-	text-transform: uppercase;
-}
-
-.events-heading {
-    margin-top: 5rem;
     font-family: "Switzer";
-    font-size: 4vw;
-    /* font-weight: 300; */
+    font-size: 8vw;
+    font-weight: 300;
     color: white;
     letter-spacing: 1vw;
     text-transform: uppercase;
+}
+
+.events-heading {
+    margin-top: 5vw; /* Use vw for margin for better responsiveness */
+    font-family: "Switzer";
+    font-size: 4vw;
+    color: white;
+    letter-spacing: 1vw;
+    text-transform: uppercase;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .heading {
+        font-size: 12vw; /* Increase font size for smaller screens */
+    }
+    .events-heading {
+        font-size: 6vw; /* Increase font size for smaller screens */
+        margin-top: 10vw; /* Adjust margin for smaller screens */
+    }
+	.horizontal-section {
+        min-width: 100%; /* Ensure full width on smaller screens */
+    }
 }

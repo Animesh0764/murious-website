@@ -25,7 +25,7 @@ const App = () => {
     const ctx = gsap.context(() => {
       // ---------- selecting all horizontal sections
       const horizontalSections = gsap.utils.toArray(".horizontal-section");
-
+  
       // ---------- applying horizontal scroll animation
       gsap.to(horizontalSections, {
         xPercent: -100 * (horizontalSections.length - 1),
@@ -35,11 +35,11 @@ const App = () => {
           pin: true,
           scrub: 1,
           snap: 1 / (horizontalSections.length - 1),
-          end: () => "+=" + document.querySelector("#container").offsetWidth,
+          end: () => "+=" + window.innerWidth, // Use window.innerWidth for responsive end value
         },
       });
     });
-
+  
     return () => ctx.revert();
   }, []);
 

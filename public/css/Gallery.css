@@ -15,7 +15,7 @@
     transform: translate(-50%, -50%);
     width: 100%;
     max-width: 1000px;
-    height: 700px;
+    height: 550px;
     background: #8f8f8f;
     box-shadow: 0 10px 30px;
 }
@@ -118,10 +118,11 @@
 
 .button {
     width: 100%;
-    text-align: center;
     position: absolute;
     bottom: 20px;
-    color: #000;
+    display: flex;
+    justify-content: space-between; /* Move buttons to edges */
+    align-items: center;
 }
 
 .button button {
@@ -130,11 +131,13 @@
     border-radius: 8px;
     border: none;
     cursor: pointer;
-    margin: 0 5px;
     border: 1px solid #000;
     transition: 0.3s;
     color: #000;
     background-color: #fff;
+    display: flex;
+    justify-content: center; /* Center arrows horizontally */
+    align-items: center; /* Center arrows vertically */
 }
 
 .button button:hover {
@@ -159,6 +162,10 @@
         left: 30px;
         position: relative;
     }
+
+    .button {
+        bottom: 10px; /* Move buttons higher */
+    }
 }
 
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
@@ -167,11 +174,30 @@
         height: 600px;
     }
 
-    .container .slide .item {
-        width: 10%;
-    }
+    
 
     .item .content {
         width: 60%;
+    }
+
+    .button {
+        bottom: 10px; /* Move buttons higher */
+    }
+}
+
+/* Center the buttons */
+.button {
+    bottom: 20px;
+}
+
+.button button {
+    position: relative;
+    top: -50%; /* Move buttons up */
+}
+
+/* Adjust button position for smaller screens */
+@media only screen and (max-width: 600px) {
+    .button button {
+        top: 0; /* Reset position for smaller screens */
     }
 }

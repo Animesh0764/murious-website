@@ -82,7 +82,7 @@
     position: absolute;
     top: 30%;
     right: 50px;
-    z-index: 100;
+    z-index: 90;
 }
 
 .arrows button{

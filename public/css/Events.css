@@ -52,7 +52,7 @@
     border: none;
     padding: 10px;
     cursor: pointer;
-    z-index: 9999;
+    z-index: 9;
   }
   
   .prev {

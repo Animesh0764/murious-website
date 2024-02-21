@@ -153,6 +153,10 @@ form.sign-up-form {
 .social-media {
     display: flex;
     justify-content: center;
+    align-items: center; /* Center vertically */
+    margin-top: 20px;
+    margin-right: 40px;
+    transition: all 0.3s ease;
 }
 .social-icon {
     height: 45px;
@@ -165,6 +169,7 @@ form.sign-up-form {
     border-radius: 50px;
     margin: 0 5px;
     cursor: pointer;
+    transition: all 0.3s ease; /* Add transition for smooth animation */
 }
 a {
     text-decoration: none;
@@ -257,25 +262,85 @@ a {
     pointer-events: all;
 }
 /*Responsive*/
-@media (max-width:779px) {
-    
+@media (max-width: 700px) {
     .sign-container {
+        width: 90vw;
         height: 75vh;
     }
 }
 
-.singin-page {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.signup-page {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+@media (max-width: 400px) {
+    .sign-container {
+        width: 90vw;
+        height: 75vh;
+    }
+    form {
+        width: 80%;
+    }
+    form.sign-up-form {
+        display: none;
+    }
+    .sign-container.sign-up-mode2 {
+        background: #f0f0f0;
+    }
+    .sign-container.sign-up-mode2 form.sign-up-form {
+        display: flex;
+        opacity: 1;
+    }
+    .sign-container.sign-up-mode2 form.sign-in-form {
+        display: none;
+    }
+    .panels-container {
+        display: none;
+    }
+    .account-text {
+        display: initial;
+        margin-top: 30px;
+    }
+    .sign-container {
+        background: black;
+    }
+    .social-text {
+        color: white;
+    }
+    .account-text {
+        color: white;
+    }
+    .image {
+        max-height: 100%;
+        width: 30%;
+    }
+    .social-icon {
+        color: white;
+    }
+    .input-field {
+        box-shadow: #df4adf 0px 20px 40px -15px;
+    }
 }
 
-.error-msg{
-    color: rgb(236, 27, 27);
-    font-size: 1rem;
+@media (max-width: 320px) {
+    form {
+        width: 90%;
+    }
+    .sign-container {
+        background: black;
+        flex-direction: column-reverse;
+    }
+    .image {
+        max-height: 100%;
+        width: 30%;
+        order: 1;
+    }
+    form.sign-in-form,
+    form.sign-up-form {
+        order: 2;
+    }
+    .social-text,
+    .account-text,
+    .social-icon {
+        color: white;
+    }
+    .input-field {
+        box-shadow: #df4adf 0px 20px 40px -15px;
+    }
 }

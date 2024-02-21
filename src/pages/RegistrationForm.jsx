@@ -52,24 +52,30 @@ const RegistrationForm = () => {
         setTotalCost(calculatedCost);
     };
 
-    return (
-        <div className="registration-container">
-            <div className="options-container">
-                <div
-                    className={`option ${selectedOption === 'team' ? 'selected' : ''}`}
-                    onClick={() => handleOptionClick('team')}
-                >
-                    Team Events
-                </div>
-                <div
-                    className={`option ${selectedOption === 'individual' ? 'selected' : ''}`}
-                    onClick={() => handleOptionClick('individual')}
-                >
-                    Individual Events
-                </div>
-            </div>
+    useEffect(() => {
+        // Update available events whenever the selected option changes
+        setAvailableEvents(selectedOption === 'team' ? [...teamEvents] : [...individualEvents]);
+    }, [selectedOption]);
 
-            <div className="event-sections">
+    return (
+        <section>
+            <div className="registration-container">
+                <div className="options-container">
+                    <div
+                        className={`option ${selectedOption === 'team' ? 'selected' : ''}`}
+                        onClick={() => handleOptionClick('team')}
+                    >
+                        Team Events
+                    </div>
+                    <div
+                        className={`option ${selectedOption === 'individual' ? 'selected' : ''}`}
+                        onClick={() => handleOptionClick('individual')}
+                    >
+                        Individual Events
+                    </div>
+                </div>
+
+                <div className="event-sections">
                     <div className="events-container">
                         <h3>Available Events</h3>
                         {availableEvents.map((event, index) => (
@@ -162,7 +168,8 @@ const RegistrationForm = () => {
                 <p className="total-cost">Total Cost: Rs. {totalCost}</p>
             </div>
         </div>
+    </section>
     );
 };
 
-export default RegistrationForm;
+export default RegistrationForm;    

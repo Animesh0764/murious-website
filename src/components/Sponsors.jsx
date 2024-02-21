@@ -1,10 +1,9 @@
 import React from "react";
-import styled,{keyframes, css} from "styled-components";
+import styled, { keyframes, css } from "styled-components";
 import sponsors from "../data/sponsors";
 
 const App = () => {
-
-  const {row1, row2} = sponsors;
+  const { row1, row2 } = sponsors;
 
   return (
     <AppContainer>
@@ -12,46 +11,34 @@ const App = () => {
         <Text>Sponsors</Text>
         <Marquee>
           <MarqueeGroup>
-            {
-              row1.map(e=>(
-                <ImageGroup>
-                  <Image src={e} />
-                </ImageGroup>
-              ))
-            }
-
+            {row1.map((e) => (
+              <ImageGroup key={e}>
+                <Image src={e} />
+              </ImageGroup>
+            ))}
           </MarqueeGroup>
           <MarqueeGroup>
-            {
-              row1.map(e=>(
-                <ImageGroup>
-                  <Image src={e} />
-                </ImageGroup>
-              ))
-            }
-
+            {row1.map((e) => (
+              <ImageGroup key={e}>
+                <Image src={e} />
+              </ImageGroup>
+            ))}
           </MarqueeGroup>
         </Marquee>
         <Marquee>
           <MarqueeGroup2>
-            {
-              row2.map(e=>(
-                <ImageGroup>
-                  <Image src={e} />
-                </ImageGroup>
-              ))
-            }
-
+            {row2.map((e) => (
+              <ImageGroup key={e}>
+                <Image src={e} />
+              </ImageGroup>
+            ))}
           </MarqueeGroup2>
           <MarqueeGroup2>
-            {
-              row2.map(e=>(
-                <ImageGroup>
-                  <Image src={e} />
-                </ImageGroup>
-              ))
-            }
-
+            {row2.map((e) => (
+              <ImageGroup key={e}>
+                <Image src={e} />
+              </ImageGroup>
+            ))}
           </MarqueeGroup2>
         </Marquee>
       </Wrapper>
@@ -69,84 +56,80 @@ const AppContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  `;
+`;
 
-  const Wrapper = styled.div`
+const Wrapper = styled.div`
   width: 100%;
   height: fit-content;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  `;
+`;
 
-  const Text = styled.div`
+const Text = styled.div`
   font-size: 3rem;
   font-weight: 500;
   margin-bottom: 1rem;
   color: #ffffff;
-  `;
+`;
 
-  const Note = styled.div`
+const Note = styled.div`
   font-size: 2rem;
   font-weight: 300;
   margin-bottom: 2rem;
   color: #7c8e9a;
-  `;
+`;
 
-
-  const Marquee = styled.div`
+const Marquee = styled.div`
   display: flex;
-  width: 1200px;
+  width: 100%;
   overflow: hidden;
   user-select: none;
   mask-image: linear-gradient(
     to right,
-    hsl( 0 0% 0% / 0),
-    hsl( 0 0% 0% / 1) 10%,
-    hsl( 0 0% 0% / 1) 90%,
-    hsl( 0 0% 0% / 0)
+    hsl(0 0% 0% / 0),
+    hsl(0 0% 0% / 1) 10%,
+    hsl(0 0% 0% / 1) 90%,
+    hsl(0 0% 0% / 0)
   );
-  `;
+`;
 
-  const scrollX = keyframes`
-  from
-  {
-    left: translateX(0);
+const scrollX = keyframes`
+  from {
+    transform: translateX(0);
   }
-  to
-  {
+  to {
     transform: translateX(-100%);
   }
-  `;
+`;
 
-  const common = css`
+const common = css`
   flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   white-space: nowrap;
-  width: 100%;
   animation: ${scrollX} 30s linear infinite;
-  `
+`;
 
-  const MarqueeGroup = styled.div`
+const MarqueeGroup = styled.div`
   ${common}
-  `;
+`;
 
-  const MarqueeGroup2 = styled.div`
+const MarqueeGroup2 = styled.div`
   ${common}
   animation-direction: reverse;
-  `; 
+`;
 
-  const ImageGroup = styled.div`
+const ImageGroup = styled.div`
   display: grid;
   place-items: center;
-  width:clamp(10rem, 1rem + 40vmin, 30rem);
-  padding: calc(clamp(10rem, 1rem + 30vmin, 30rem)/10);
-  `;
+  width: clamp(10rem, 1rem + 40vmin, 30rem);
+  padding: calc(clamp(10rem, 1rem + 30vmin, 30rem) / 10);
+`;
 
-  const Image = styled.img`
+const Image = styled.img`
   object-fit: contain;
   width: 100%;
   height: 100%;
@@ -154,4 +137,45 @@ const AppContainer = styled.div`
   aspect-ratio: 16/9;
   padding: 5px 20px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+`;
+
+// Media query for responsive design
+const breakpoints = {
+  small: "600px",
+  medium: "900px",
+  large: "1200px",
+};
+
+const mediaQueries = Object.keys(breakpoints).reduce((acc, label) => {
+  acc[label] = (...args) => css`
+    @media (max-width: ${breakpoints[label]}) {
+      ${css(...args)};
+    }
   `;
+  return acc;
+}, {});
+
+const ResponsiveWrapper = styled(Wrapper)`
+  ${mediaQueries.medium`
+    padding: 0 20px; /* Adjust as needed */
+  `};
+`;
+
+const ResponsiveMarquee = styled(Marquee)`
+  ${mediaQueries.medium`
+    width: 100vw;
+    padding: 0 20px; /* Adjust as needed */
+  `};
+`;
+
+const ResponsiveImage = styled(Image)`
+  ${mediaQueries.medium`
+    width: 80%;
+  `};
+`;
+
+const ResponsiveText = styled(Text)`
+  ${mediaQueries.medium`
+    font-size: 2rem;
+  `};
+`;

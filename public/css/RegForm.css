@@ -1,140 +1,218 @@
+section {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  flex-wrap: wrap;
+  overflow: hidden;
+  z-index: 2;
+}
+
+section span {
+  position: relative;
+  display: block;
+  width: calc(6.25vw - 2px);
+  height: calc(6.25vw - 2px);
+  background: #181818;
+  z-index: 2;
+  transition: 1.5s;
+}
+
+section span:hover {
+  background: #df4adf;
+  transition: 0s;
+}
+
 .registration-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
+  position: absolute;
+  width: 90%;
+  max-width: 600px;
+  height: 90%;
+  max-height: 760px;
+  background: #222;
+  z-index: 9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 9);
+  overflow-y: auto;
+}
+
+.options-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.option {
+  cursor: pointer;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #df4adf;
+  transition: color 0.3s;
+}
+
+.option:hover {
+  color: #f755f7;
+}
+
+.selected {
+  border-bottom: 2px solid #df4adf;
+  color: #df4adf;
+  transition: border-bottom 0.3s, color 0.3s;
+}
+
+.form-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.event-sections {
+  width: 100%;
+  margin-bottom: -30px;
+}
+
+.events-container {
+  margin: 1rem auto;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.selected-events {
+  width: 100%;
+}
+
+.selected-event {
+  background-color: #fff;
+  color: #df4adf;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.selected-event:hover {
+  background-color: #f0f0f0;
+  color: #f755f7;
+}
+
+.form-container {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 600px;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+  color: #df4adf;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.form-container label {
+  display: block;
+  margin-bottom: 5px;
+  color: #ece7e7;
+}
+
+.form-container input {
+  position: relative;
+  width: 100%;
+  background: #333;
+  border: none;
+  outline: none;
+  padding: 15px 10px 5px;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1em;
+  margin: 2px;
+}
+
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+button {
+  color: #df4adf;
+  border: none;
+  padding: 8px 15px;
+  margin: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #f755f7;
+  transform: scale(1.05);
+}
+
+.calculate-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.calculate-button {
+  background-color: #df4adf;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  margin-top: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.calculate-button:hover {
+  background-color: #f755f7;
+  transform: scale(1.05);
+}
+
+.total-cost {
+  font-size: 20px;
+  margin-top: 10px;
+  color: #df4adf;
+}
+
+@media (max-width: 768px) {
+  section span {
+    width: calc(10vw - 2px);
+    height: calc(9vw - 2px);
   }
-  
-  .options-container {
-    display: flex;
-    margin-bottom: 20px;
-  }
-  
+
   .option {
-    cursor: pointer;
-    margin-right: 20px;
-    font-size: 18px;
-    color: #919191;
-    transition: color 0.3s;
+    font-size: 3.5vw;
   }
-  
-  .option:hover {
-    color: #007bff;
-  }
-  
-  .selected {
-    border-bottom: 2px solid #007bff;
-    color: #007bff;
-    transition: border-bottom 0.3s, color 0.3s;
-  }
-  
-  .form-section {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .event-sections {
-    width: 30%; /* Adjusted width for event buttons */
-  }
-  
-  .events-container {
-    margin: 1rem auto;
-    width: 100%;
-    text-align: center;
-  }
-  
-  .selected-events {
-    width: 100%;
-  }
-  
-  .selected-event {
-    background-color: #fff;
-    color: #007bff;
-    transition: background-color 0.3s, color 0.3s;
-  }
-  
-  .selected-event:hover {
-    background-color: #f0f0f0;
-    color: #007bff;
-  }
-  
-  .form-container {
-    width: 65%; /* Adjusted width for registration form */
-    max-width: 500px; /* Added max-width for registration form */
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .form-container h2 {
-    color: #007bff;
-    margin-bottom: 20px;
-  }
-  
-  .form-container label {
-    display: block;
-    margin-bottom: 8px;
-    color: #333;
-  }
-  
-  .form-container input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-  
-  .button-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 20px;
-  }
-  
+
   button {
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    margin: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s, transform 0.2s;
+    font-size: 2vw;
+    padding: 1.5vw 3vw;
   }
-  
-  button:hover {
-    background-color: #0056b3;
-    transform: scale(1.05);
-  }
-  
-  .calculate-container {
-    text-align: center;
-  }
-  
+
   .calculate-button {
-    background-color: #28a745;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    margin-top: 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 18px;
-    transition: background-color 0.3s, transform 0.2s;
+    font-size: 2.2vw;
+    padding: 1.5vw 3vw;
   }
-  
-  .calculate-button:hover {
-    background-color: #218838;
-    transform: scale(1.05);
-  }
-  
+
   .total-cost {
-    font-size: 20px;
-    margin-top: 10px;
-    color: #28a745;
+    font-size: 2.5vw;
   }
-  
+}

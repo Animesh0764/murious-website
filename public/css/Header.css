@@ -9,6 +9,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 8px 3%;
+    z-index: 20;
   }
   
   .logo {
@@ -205,7 +206,7 @@
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 20f;
     top: 0;
     background-color: black;
     overflow-x: hidden;transition: transform 0.5s ease-in-out;

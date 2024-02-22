@@ -8,12 +8,12 @@ import '../public/css/Loader.css';
 import Navbar from './components/Navbar';
 
 const Root = () => {
-  const [showLoader, setShowLoader] = useState(false);
+  const [showLoader, setShowLoader] = useState(true);
 
   useEffect(() => {
     const timeoutId = setTimeout(() => {
       setShowLoader(false);
-    }, 2500);
+    }, 6500);
 
     return () => clearTimeout(timeoutId);
   }, []);

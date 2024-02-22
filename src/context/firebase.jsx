@@ -3,7 +3,7 @@ import { getAnalytics } from "firebase/analytics";
 import { getAuth, GoogleAuthProvider } from 'firebase/auth';
 import { createContext } from "react";
 import { useContext } from "react";
-import { getFirestore } from "firebase/firestore";
+import { addDoc, collection, getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
     apiKey: "AIzaSyB_aYNNLmvlTaQWLx_cVRPx2nFVJdRcWMM",
@@ -25,7 +25,6 @@ const FirebaseContext = createContext(null);
 export const useFirebase = () => useContext(FirebaseContext)
 
 export const FirebaseProvider = (props) => {
-
     const signupUserUsingGoogle = () => {
         const provider = new GoogleAuthProvider();
         signInWithPopup(firebaseAuth, provider)
@@ -37,7 +36,17 @@ export const FirebaseProvider = (props) => {
             });
     }
 
-    return <FirebaseContext.Provider value={{signupUserUsingGoogle}}>
+    const registerUserforEvents = async () => {
+        const docRef = await addDoc(collection(db, "registeredEvents"), {
+            username: "Animesh",
+            event1: true,
+            event2: true,
+        });
+    }
+
+    return <FirebaseContext.Provider
+        value={{signupUserUsingGoogle, registerUserforEvents}}
+    >
         {props.children}
     </FirebaseContext.Provider>
 }

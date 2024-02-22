@@ -3,8 +3,14 @@ import "../../public/css/Auth.css";
 import Murious from "../../public/images/muriouslogo.webp";
 import { FaEnvelope, FaLock, FaGoogle } from "react-icons/fa";
 import { useFirebase } from "../context/firebase";
-import { getAuth, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
+import {
+  getAuth,
+  GoogleAuthProvider,
+  signInWithPopup,
+  onAuthStateChanged
+} from "firebase/auth";
 import { redirect } from "react-router-dom";
+import toast, { Toaster } from 'react-hot-toast';
 
 const Authentication = () => {
   const [isSignUpMode, setSignUpMode] = useState(false);
@@ -12,6 +18,16 @@ const Authentication = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [showPassword1, setShowPassword1] = useState(false);
   const [isMobileView, setIsMobileView] = useState(false);
+  const [user, setUser] = useState(null);
+
+  useEffect(() => {
+    const firebaseAuth = getAuth();
+    const unsubscribe = onAuthStateChanged(firebaseAuth, (user) => {
+      setUser(user);
+    });
+
+    return unsubscribe;
+  }, []);
 
   useEffect(() => {
     const handleResize = () => {
@@ -44,22 +60,25 @@ const Authentication = () => {
     setShowPassword1(!showPassword1);
   };
 
-  const firebaseAuth = getAuth();
-  const user = firebaseAuth.currentUser;
-
   const signupUserUsingGoogle = () => {
     const provider = new GoogleAuthProvider();
-    signInWithPopup(firebaseAuth, provider)
-    redirect('/')
+    signInWithPopup(getAuth(), provider)
+      .then((result) => {
+        const user = result.user;
+        toast.success(`Successfully logged in as ${user.displayName || user.email}`);
+        window.location.href = '/';
+      })
+      .catch((error) => {
+        console.error(error);
+        toast.error('Failed to log in with Google');
+      });
   }
 
   const firebase = useFirebase();
 
   return (
-
-    
-
     <div className="sign-body">
+      <Toaster />
       {isMobileView && <div className="error-msg" style={{ textAlign: 'center' }}>Please use a desktop/laptop to authenticate yourself. Thanks</div>}
       {!isMobileView && (
       <div

@@ -18,6 +18,13 @@ export default function Cards(parse) {
                 <img className='event-image' src={parse.img4} alt={parse.alt4}/>
                 <img className='event-image' src={parse.img5} alt={parse.alt5}/>
             </div>
+            <div className='register-button'>
+                <button className="btn"
+                style={{width:`15rem`, height:`5rem`, borderRadius:`15px`}}>
+                    <a href="/registration" className="btn-link"
+                    style={{color:`#fff`, fontSize:`1.5rem`}}>Register Now</a>
+                </button>
+            </div>
         </div>
     </div>
   )

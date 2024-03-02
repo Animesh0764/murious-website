@@ -11,19 +11,17 @@ export default function Expanse() {
         <span className="header-bg-for-white"/>
           <Cards
             img={Image1}
-            alt="Expanse"
-            title="Expanse 3.0"
+            alt="Frame By Frame"
+            title="Frame By Frame"
             date="Date: 12th March 2021"
-            about="The expanse,
-            most awaited event of murious.
-            a 18-hours long hackathon where
-            juitians will come together in
-            teams of 2-4 members to create
-            solution on real life problems.
-            let's sit, play, eat, chill and work
-            to create
-            the best we can.
-            "
+            about="Participants will have to group
+            themselves into
+            sets of two or three members
+            max and are supposed to make a
+            video of minimum 30 seconds and
+            maximum of 60 seconds to
+            convey a
+            “story”"
             img1={Image1}
             alt1="Image"
             img2={Image1}

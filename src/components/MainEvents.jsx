@@ -102,6 +102,17 @@ const App = () => {
       >
         <h1 className="heading">Event 8</h1>
       </section>
+      <section
+        className="horizontal-section"
+        style={{ backgroundImage: `url(${imageUrls[3]})` }}
+      >
+        <button className="btn"
+        style={{width:`15rem`, height:`5rem`, borderRadius:`15px
+        `}}>
+          <a href="/events" className="btn-link"
+          style={{color:`#fff`, fontSize:`1.5rem`}}>View More...</a>
+        </button>
+      </section>
     </main>
     </div>
   );

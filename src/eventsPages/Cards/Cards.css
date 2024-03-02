@@ -41,4 +41,9 @@
     object-fit: contain;
     margin: 1rem;
   }
+  .event-about{
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    font-family: Switzer;
+  }
   

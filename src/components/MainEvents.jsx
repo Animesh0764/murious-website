@@ -52,7 +52,7 @@ const App = () => {
         className="horizontal-section"
         style={{ backgroundImage: `url(${imageUrls[0]})` }}
       >
-        <h1 className="heading">Event 1</h1>
+        <h1 className="heading">Expanse 3.0</h1>
       </section>
 
       {/* ---------- section 02 ---------- */}
@@ -60,7 +60,7 @@ const App = () => {
         className="horizontal-section"
         style={{ backgroundImage: `url(${imageUrls[1]})` }}
       >
-        <h1 className="heading">Event 2</h1>
+        <h1 className="heading">Code Chaos</h1>
       </section>
 
       {/* ---------- section 03 ---------- */}
@@ -68,7 +68,7 @@ const App = () => {
         className="horizontal-section"
         style={{ backgroundImage: `url(${imageUrls[2]})` }}
       >
-        <h1 className="heading">Event 3</h1>
+        <h1 className="heading">Picture Perfect</h1>
       </section>
 
       {/* ---------- section 04 ---------- */}
@@ -76,31 +76,31 @@ const App = () => {
         className="horizontal-section"
         style={{ backgroundImage: `url(${imageUrls[3]})` }}
       >
-        <h1 className="heading">Event 4</h1>
+        <h1 className="heading">Web-O-Fiesta</h1>
       </section>
       <section
         className="horizontal-section"
         style={{ backgroundImage: `url(${imageUrls[3]})` }}
       >
-        <h1 className="heading">Event 5</h1>
+        <h1 className="heading">Code Rumble</h1>
       </section>
       <section
         className="horizontal-section"
         style={{ backgroundImage: `url(${imageUrls[3]})` }}
       >
-        <h1 className="heading">Event 6</h1>
+        <h1 className="heading">Code Relay</h1>
       </section>
       <section
         className="horizontal-section"
         style={{ backgroundImage: `url(${imageUrls[3]})` }}
       >
-        <h1 className="heading">Event 7</h1>
+        <h1 className="heading">Storage Wars</h1>
       </section>
       <section
         className="horizontal-section"
         style={{ backgroundImage: `url(${imageUrls[3]})` }}
       >
-        <h1 className="heading">Event 8</h1>
+        <h1 className="heading">Bridge Making</h1>
       </section>
       <section
         className="horizontal-section"

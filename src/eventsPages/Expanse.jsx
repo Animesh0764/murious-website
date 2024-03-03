@@ -14,6 +14,8 @@ export default function Expanse() {
             alt="Expanse"
             title="Expanse 3.0"
             date="Date: 12th March 2021"
+            venue="Venue: XXX"
+            time="Time: XXX"
             about="The expanse,
             most awaited event of murious.
             a 18-hours long hackathon where

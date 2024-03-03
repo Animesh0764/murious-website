@@ -27,7 +27,7 @@ body {
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	height: 100vh;
+	height: 90vh;
 	width: 50%;
 	display: flex;
 	justify-content: center;
@@ -43,6 +43,7 @@ body {
 	color: white;
 	letter-spacing: 1vw;
 	text-transform: uppercase;
+	text-align: center;
 }
 
 .events-heading {

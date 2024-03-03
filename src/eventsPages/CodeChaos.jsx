@@ -13,6 +13,8 @@ export default function Expanse() {
           alt="Movie Night"
           title="Code Chaos"
           date="Date: 12th March 2021"
+          venue="Venue: XXX"
+          time="Time: XXX"
           about="Well, to give the tech nerd in
             you a chance to flex your
             coding skills, murious'18

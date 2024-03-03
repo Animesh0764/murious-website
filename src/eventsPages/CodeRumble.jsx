@@ -11,22 +11,21 @@ export default function Expanse() {
         <span className="header-bg-for-white"/>
           <Cards
             img={Image1}
-            alt="Web-O-Fiesta"
-            title="Web-O-Fiesta"
+            alt="Code Rumble"
+            title="Code Rumble"
             date="Date: 12th March 2021"
             venue="Venue: XXX"
             time="Time: XXX"
-            about="Coders, brace yourselves for the
-            ultimate test of skill and speed!
-            introducing 'Web-O-Fiesta,
-            ' where
-            your coding mettle will be put to
-            the ultimate test.
-            in this electrifying event, you'll
-            face off against the clock and
-            your fellow participants as you
-            race to bring a ui design to life
-            through the power of code."
+            about="Prepare for an adrenalinefueled coding extravaganza
+            inspired by wwe's royal rumble
+            – welcome to Code Rumble by IEEE JUIT-SB! This
+            dynamic event pits coding
+            enthusiasts against each other
+            in a series of ruthless rounds,
+            eliminating contenders until
+            only the coding champion
+            remains.
+            "
             img1={Image1}
             alt1="Image"
             img2={Image1}

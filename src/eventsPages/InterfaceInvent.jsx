@@ -13,6 +13,8 @@ export default function Expanse() {
           alt="InterFace Invent"
           title="InterFace Invent"
           date="Date: 12th March 2021"
+          venue="Venue: XXX"
+          time="Time: XXX"
           about="Step into the realm of digital
             design with 'ui/ux showdown' –
             an electrifying event that

@@ -27,6 +27,17 @@
   .e-date {
     font-size: 2rem;
     color: #df4adf;
+    margin-bottom: 0.5rem;
+    font-family: Switzer;
+  }
+  .e-venue {
+    font-size: 2rem;
+    color: #df4adf;
+    margin-bottom: 0.5rem;
+    font-family: Switzer;
+  }.e-time {
+    font-size: 2rem;
+    color: #df4adf;
     margin-bottom: 2rem;
     font-family: Switzer;
   }

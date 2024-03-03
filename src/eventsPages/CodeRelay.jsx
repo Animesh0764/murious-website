@@ -11,22 +11,24 @@ export default function Expanse() {
         <span className="header-bg-for-white"/>
           <Cards
             img={Image1}
-            alt="Web-O-Fiesta"
-            title="Web-O-Fiesta"
+            alt="Code Relay"
+            title="Code Relay"
             date="Date: 12th March 2021"
             venue="Venue: XXX"
             time="Time: XXX"
-            about="Coders, brace yourselves for the
-            ultimate test of skill and speed!
-            introducing 'Web-O-Fiesta,
-            ' where
-            your coding mettle will be put to
-            the ultimate test.
-            in this electrifying event, you'll
-            face off against the clock and
-            your fellow participants as you
-            race to bring a ui design to life
-            through the power of code."
+            about="This event is a unique and exciting
+            competition that combines
+            elements of relay race and
+            problem-solving. it is open to all
+            participants and teams consist of
+            4 members. Each team member will
+            solve one quarter of the problem
+            before passing on a baton,
+            represented by a mouse and pen, to
+            the next team member. The first
+            team to solve all the problems
+            wins the competition.
+            "
             img1={Image1}
             alt1="Image"
             img2={Image1}

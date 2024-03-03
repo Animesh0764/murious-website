@@ -75,10 +75,42 @@
         {
             "id": 10,
             "imageUrl": "../../public/images/IMG_5187.JPG",
-            "eventName": "Inventive Code-a-thon",
-            "tagline": "Invent, Code, Win: Murious 18.0 awaits your innovation",
+            "eventName": "Make It Print",
+            "tagline": "Showcase your creativity and wear your designs at Murious 18.0",
             "price": 220,
-            "readMoreLink": "/inventivecodeathon"   
+            "readMoreLink": "/makeitprint"   
+        },
+        {
+            "id": 11,
+            "imageUrl": "../../public/images/IMG_5187.JPG",
+            "eventName": "Code Rumble",
+            "tagline": "Eliminate opponents royal rumble style at Murious 18.0",
+            "price": 220,
+            "readMoreLink": "/coderumble"   
+        },
+        {
+            "id": 12,
+            "imageUrl": "../../public/images/IMG_5187.JPG",
+            "eventName": "Code Relay",
+            "tagline": "Pass the coding baton in this programming relay at Murious 18.0",
+            "price": 220,
+            "readMoreLink": "/coderelay"   
+        },
+        {
+            "id": 13,
+            "imageUrl": "../../public/images/IMG_5187.JPG",
+            "eventName": "Storage Wars",
+            "tagline": "Show your negotiation, financial literacy and strategic skills at Murious 18.0",
+            "price": 220,
+            "readMoreLink": "/storagewars"   
+        },
+        {
+            "id": 14,
+            "imageUrl": "../../public/images/IMG_5187.JPG",
+            "eventName": "Bandish",
+            "tagline": "Showcase your musical talent and connect through music at Murious 18.0",
+            "price": 220,
+            "readMoreLink": "/bandish"   
         }
     ],
 

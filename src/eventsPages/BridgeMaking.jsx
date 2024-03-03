@@ -14,6 +14,8 @@ export default function Expanse() {
             alt="Bridge Making"
             title="Bridge Making"
             date="Date: 12th March 2021"
+            venue="Venue: XXX"
+            time="Time: XXX"
             about="The event focuses on bringing out
             the creative side of the
             participants. the main aim of the

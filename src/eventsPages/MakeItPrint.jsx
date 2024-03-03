@@ -11,22 +11,22 @@ export default function Expanse() {
         <span className="header-bg-for-white"/>
           <Cards
             img={Image1}
-            alt="Web-O-Fiesta"
-            title="Web-O-Fiesta"
+            alt="Make It Print"
+            title="Make It Print"
             date="Date: 12th March 2021"
             venue="Venue: XXX"
             time="Time: XXX"
-            about="Coders, brace yourselves for the
-            ultimate test of skill and speed!
-            introducing 'Web-O-Fiesta,
-            ' where
-            your coding mettle will be put to
-            the ultimate test.
-            in this electrifying event, you'll
-            face off against the clock and
-            your fellow participants as you
-            race to bring a ui design to life
-            through the power of code."
+            about="Get creative with 'make it
+            print'! design unique prints for
+            t-shirts or hoodies based on
+            given topics.
+            submit your design for a
+            chance to win, with the
+            winning design printed on a
+            hoodie. don't miss this
+            opportunity to showcase your
+            creativity and wear your own
+            artwork!"
             img1={Image1}
             alt1="Image"
             img2={Image1}

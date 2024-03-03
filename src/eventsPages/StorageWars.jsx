@@ -11,22 +11,23 @@ export default function Expanse() {
         <span className="header-bg-for-white"/>
           <Cards
             img={Image1}
-            alt="Web-O-Fiesta"
-            title="Web-O-Fiesta"
+            alt="Storage Wars"
+            title="Storage Wars"
             date="Date: 12th March 2021"
             venue="Venue: XXX"
             time="Time: XXX"
-            about="Coders, brace yourselves for the
-            ultimate test of skill and speed!
-            introducing 'Web-O-Fiesta,
-            ' where
-            your coding mettle will be put to
-            the ultimate test.
-            in this electrifying event, you'll
-            face off against the clock and
-            your fellow participants as you
-            race to bring a ui design to life
-            through the power of code."
+            about="In 'storage wars,
+            ' students
+            engage in bidding on storage
+            containers using fake currency,
+            inspecting only the exterior.
+            teams of 2-4 collaborate,
+            emphasizing strategic thinking
+            and resource management. The
+            event fosters negotiation,
+            financial literacy, and
+            teamwork skills in a competitive
+            setting."
             img1={Image1}
             alt1="Image"
             img2={Image1}

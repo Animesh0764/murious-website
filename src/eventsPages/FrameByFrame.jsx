@@ -14,6 +14,8 @@ export default function Expanse() {
             alt="Frame By Frame"
             title="Frame By Frame"
             date="Date: 12th March 2021"
+            venue="Venue: XXX"
+            time="Time: XXX"
             about="Participants will have to group
             themselves into
             sets of two or three members

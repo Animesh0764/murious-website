@@ -14,6 +14,8 @@ export default function Expanse() {
             alt="7 Days 7 Designs"
             title="7 Days 7 Designs"
             date="Date: 12th March 2021"
+            venue="Venue: XXX"
+            time="Time: XXX"
             about="An exhilarating design challenge
             where creativity thrives and
             innovation knows no bounds!

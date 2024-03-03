@@ -14,6 +14,8 @@ export default function Expanse() {
             alt="Code Cleanse"
             title="Code Cleanse"
             date="Date: 12th March 2021"
+            venue="Venue: XXX"
+            time="Time: XXX"
             about="Unleash your inner code
             detective and embark on a quest
             to uncover hidden errors

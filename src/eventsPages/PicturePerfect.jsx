@@ -14,6 +14,8 @@ export default function Expanse() {
             alt="Picture Perfect"
             title="Picture Perfect"
             date="Date: 12th March 2021"
+            venue="Venue: XXX"
+            time="Time: XXX"
             about="Participants are required to
             roam around the campus and
             click the best shot according

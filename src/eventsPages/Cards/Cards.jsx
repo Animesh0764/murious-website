@@ -9,6 +9,8 @@ export default function Cards(parse) {
             <div className="event-content">
                 <div className="event-title">{parse.title}</div>
                 <div className="event-date e-date">{parse.date}</div>
+                <div className="event-venue e-venue">{parse.venue}</div>
+                <div className="event-time e-time">{parse.time}</div>
                 <div className="event-about">{parse.about}</div>
             </div>
             <div className='event-images'>

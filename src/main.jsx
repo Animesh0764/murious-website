@@ -13,7 +13,7 @@ const Root = () => {
   useEffect(() => {
     const timeoutId = setTimeout(() => {
       setShowLoader(false);
-    }, 6500);
+    }, 1500);
 
     return () => clearTimeout(timeoutId);
   }, []);

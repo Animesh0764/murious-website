@@ -42,6 +42,7 @@
     margin: 1rem auto;
     width: 100%;
     text-align: center;
+    display: block;
   }
   
   .selected-events {
@@ -94,9 +95,12 @@
     justify-content: center;
     margin-bottom: 20px;
   }
+
+  .payment-screenshot-container{
+    text-align: center;
+  }
   
   button {
-    color: #fff;
     border: none;
     padding: 10px 20px;
     margin: 10px;

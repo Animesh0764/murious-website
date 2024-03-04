@@ -31,7 +31,7 @@ const Authentication = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobileView(window.innerWidth <= 696);
+      setIsMobileView(window.innerWidth <= 320);
     };
 
     handleResize();

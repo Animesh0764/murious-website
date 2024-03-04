@@ -264,6 +264,73 @@ a {
     }
 }
 
+@media (max-width:689px) {
+    
+    .sign-container {
+        height: 60vh;
+    }
+
+    .title{
+        font-size: 30px;
+    }
+
+    .input-field{
+        font-size: 12px;
+    }
+
+    .input-field input::placeholder{
+        font-size: 12px;
+    }
+
+    .input-field input{
+        font-size: 12px;
+    }
+
+    .input-field label{
+        font-size: 12px;
+    }
+
+    .input-field span{
+        font-size: 15px;
+    }
+
+    .btn{
+        font-size: 15px;
+    }
+
+    .social-text{
+        font-size: 14px;
+    }
+
+    .social-icon{
+        height: 35px;
+        width: 35px;
+    }
+
+    .panel h3{
+        font-size: 20px;
+    }
+
+    .panel p{
+        font-size: 12px;
+    }
+
+    .image{
+        width: 25%;
+    }
+
+    .left-panel .image,
+
+    .left-panel .content{
+        transform: translateX(-300%);
+    }
+
+    .right-panel .image,
+        .right-panel .content {
+        transform: translateX(0);
+    }
+}
+
 .singin-page {
     display: flex;
     flex-direction: column;

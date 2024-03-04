@@ -8,13 +8,27 @@ import { addDoc, collection, getFirestore, query, getDocs, where } from "firebas
 import toast, { Toaster } from 'react-hot-toast';
 
 const teamEvents = [
-    { name: 'Hackathon', cost: 50 },
-    { name: 'Code Competition', cost: 30 },
+    { name: 'Expanse 3.0', cost: 250 },
+    { name: 'Code Relay(ACM)', cost: 0 },
+    { name: 'Bridge Making', cost: 150 },
+    { name: 'BGMI', cost: 200/300 },
+    { name: 'Valorant', cost: 250/350 },
+    { name: 'FIFA', cost: 100 },
+    { name: 'Tekken 7', cost: 100 },
+    { name: 'Code Rumble(IEEE)', cost: 0 },
+    { name: 'Treasure Hunt(Omega Leo)', cost: 50/70 },
 ];
 
 const individualEvents = [
-    { name: 'Tech Talk', cost: 10 },
-    { name: 'Quiz', cost: 20 },
+    { name: 'Web-O-Fiesta', cost: 0 },
+    { name: 'Code Chaos', cost: 0 },
+    { name: 'Code Cleanse', cost: 0 },
+    { name: 'Bandish(Omega Leo)', cost: 0 },
+    { name: 'Interface Invent', cost: 0 },
+    { name: 'Storage Wars(TIEDC)', cost: 0 },
+    { name: 'Make it Print', cost: 0 },
+    { name: 'Frame by Frame', cost: 300 },
+    { name: 'Treasure Hunt(Omega Leo)', cost: 30 },
 ];
 
 const RegistrationForm = () => {
@@ -23,15 +37,21 @@ const RegistrationForm = () => {
     const [selectedEvents, setSelectedEvents] = useState([]);
     const [totalCost, setTotalCost] = useState(0);
     const [user, setUser] = useState(null);
+    const [allJUITMembers, setAllJUITMembers] = useState(false);
+    const [qrCodeImage, setQRCodeImage] = useState(null);
+    const [paymentScreenshot, setPaymentScreenshot] = useState(null);
+
+    const firebase = useFirebase();
+    const db = getFirestore();
 
     useEffect(() => {
         const firebaseAuth = getAuth();
         firebaseAuth.onAuthStateChanged((currentUser) => {
             if (!currentUser) {
                 toast.error('Please sign in to register for the event');
-                setTimeout(() => {
-                    window.location.href = '/signin';
-                }, 2000);
+                // setTimeout(() => {
+                //     window.location.href = '/signin';
+                // }, 2000);
             } else {
                 setUser(currentUser);
             }
@@ -46,7 +66,7 @@ const RegistrationForm = () => {
     // Team-specific fields
     const [teamName, setTeamName] = useState('');
     const [leaderName, setLeaderName] = useState('');
-    const [teamMembers, setTeamMembers] = useState(['', '', '', '', '']);
+    const [teamMembers, setTeamMembers] = useState(['', '', '', '']);
 
     const handleOptionClick = (option) => {
         setSelectedOption(option);
@@ -67,6 +87,35 @@ const RegistrationForm = () => {
     };
 
     const handleCalculateClick = () => {
+        let calculatedCost = 0;
+
+            selectedEvents.forEach(event => {
+                if (event.name === 'BGMI') {
+                    calculatedCost += calculatedCost += allJUITMembers ? 300 : 200;
+                } else if (event.name === 'Valorant') {
+                    calculatedCost += allJUITMembers ? 350 : 250;
+                } else if (event.name === 'Treasure Hunt(Omega Leo)') {
+                    calculatedCost += teamMembers.length * (teamMembers.length <= 2 ? 50 : 70);
+                } else {
+                    calculatedCost += event.cost;
+                }
+            });
+            setTotalCost(calculatedCost);
+
+            setQRCodeImage('../../public/images/qr.jpeg');  
+    };
+
+    const handleFileUpload = (e) => {
+        const file = e.target.files[0];
+        setPaymentScreenshot(file);
+    };   
+    
+    const handleSubmit = async () => {
+        if (!paymentScreenshot) {
+            toast.error('Please upload payment screenshot.');
+            return;
+        }
+
         if (selectedOption === 'individual') {
             registerUserforIndividualEvents({
                 username: name,
@@ -86,16 +135,14 @@ const RegistrationForm = () => {
                 selectedEvents: selectedEvents.map(event => event.name),
                 mobile: phoneNumber,
             });
+
         }
-        const calculatedCost = selectedEvents.reduce((acc, event) => acc + event.cost, 0);
-        setTotalCost(calculatedCost);
+        setQRCodeImage(null);
+        setPaymentScreenshot(null);
     };
 
-    const firebase = useFirebase();
-    const db = getFirestore();
-
     const registerUserforIndividualEvents = async (userData) => {
-        const user = firebase.auth().currentUser;
+        const user = getAuth().currentUser;
         if (!user) {
             console.error("User is not authenticated");
             return;
@@ -118,7 +165,7 @@ const RegistrationForm = () => {
             }
         }
 
-        const docRef = await addDoc(collection(db, "registeredEvents", userUid), {
+        const docRef = await addDoc(collection(db, "registeredEvents", userUid, "individual"), {
             username: userData.username,
             events: userData.selectedEvents.reduce((acc, eventName) => {
                 acc[eventName.name] = true;
@@ -136,7 +183,7 @@ const RegistrationForm = () => {
     }
 
     const registerUserforTeamEvents = async (teamData) => {
-        const userEmail = firebase.auth().currentUser.email;
+        const userEmail = getAuth().email;
 
         const querySnapshot = await getDocs(query(collection(db, "registeredTeamEvents"), where("email", "==", userEmail)));
 
@@ -261,6 +308,18 @@ const RegistrationForm = () => {
                                 }}
                             />
                         ))}
+
+                        <label htmlFor="allJUITMembers">All Team Members from JUIT?</label>
+                        <select
+                            id="allJUITMembers"
+                            value={allJUITMembers}
+                            onChange={(e) => setAllJUITMembers(e.target.value === 'true')}
+                            required
+                        >
+                            <option value="true">Yes</option>
+                            <option value="false">No</option>
+                        </select>
+
                     </div>
                 )}
             </div>
@@ -277,6 +336,24 @@ const RegistrationForm = () => {
                         </button>
                     ))}
                 </div>
+            </div>
+
+            {qrCodeImage && (
+                <div className="qr-code-container">
+                    <h3>QR Code</h3>
+                    <img src={qrCodeImage} alt="QR Code" />
+                </div>
+            )}
+
+            <div className="submit-container">
+                <button className="submit-button" onClick={handleSubmit}>
+                    Submit Registration
+                </button>
+            </div>
+
+            <div className="payment-screenshot-container">
+                <label htmlFor="paymentScreenshot">Upload Payment Screenshot:<br></br></label>
+                <input type="file" id="paymentScreenshot" onChange={handleFileUpload} />
             </div>
 
             <div className="calculate-container">

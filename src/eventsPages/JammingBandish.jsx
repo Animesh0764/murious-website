@@ -11,21 +11,23 @@ export default function Expanse() {
         <span className="header-bg-for-white"/>
           <Cards
             img={Image1}
-            alt="Expanse"
-            title="Expanse 3.0"
+            alt="Bandish"
+            title="Bandish"
             date="Date: 12th March 2021"
             venue="Venue: XXX"
             time="Time: XXX"
-            about="The expanse,
-            most awaited event of murious.
-            a 18-hours long hackathon where
-            juitians will come together in
-            teams of 2-4 members to create
-            solution on real life problems.
-            let's sit, play, eat, chill and work
-            to create
-            the best we can.
-            "
+            about="The leo club is organizing a jamming
+            session for the tech fest. it's a
+            casual gathering where musicians
+            come together to play without
+            preparation. the aim is to create a
+            fun environment for students and
+            faculty to showcase their musical
+            talents and connect through
+            music. this event is significant as
+            it's the first one in six years,
+            providing a memorable experience
+            for everyone involved."
             img1={Image1}
             alt1="Image"
             img2={Image1}

@@ -11,20 +11,23 @@ export default function Expanse() {
         <span className="header-bg-for-white"/>
           <Cards
             img={Image1}
-            alt="Expanse"
-            title="Expanse 3.0"
+            alt="Code Relay"
+            title="Code Relay"
             date="Date: 12th March 2021"
             venue="Venue: XXX"
             time="Time: XXX"
-            about="The expanse,
-            most awaited event of murious.
-            a 18-hours long hackathon where
-            juitians will come together in
-            teams of 2-4 members to create
-            solution on real life problems.
-            let's sit, play, eat, chill and work
-            to create
-            the best we can.
+            about="This event is a unique and exciting
+            competition that combines
+            elements of relay race and
+            problem-solving. it is open to all
+            participants and teams consist of
+            4 members. Each team member will
+            solve one quarter of the problem
+            before passing on a baton,
+            represented by a mouse and pen, to
+            the next team member. The first
+            team to solve all the problems
+            wins the competition.
             "
             img1={Image1}
             alt1="Image"

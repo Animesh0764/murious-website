@@ -11,21 +11,22 @@ export default function Expanse() {
         <span className="header-bg-for-white"/>
           <Cards
             img={Image1}
-            alt="Expanse"
-            title="Expanse 3.0"
+            alt="Make It Print"
+            title="Make It Print"
             date="Date: 12th March 2021"
             venue="Venue: XXX"
             time="Time: XXX"
-            about="The expanse,
-            most awaited event of murious.
-            a 18-hours long hackathon where
-            juitians will come together in
-            teams of 2-4 members to create
-            solution on real life problems.
-            let's sit, play, eat, chill and work
-            to create
-            the best we can.
-            "
+            about="Get creative with 'make it
+            print'! design unique prints for
+            t-shirts or hoodies based on
+            given topics.
+            submit your design for a
+            chance to win, with the
+            winning design printed on a
+            hoodie. don't miss this
+            opportunity to showcase your
+            creativity and wear your own
+            artwork!"
             img1={Image1}
             alt1="Image"
             img2={Image1}

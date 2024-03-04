@@ -11,20 +11,20 @@ export default function Expanse() {
         <span className="header-bg-for-white"/>
           <Cards
             img={Image1}
-            alt="Expanse"
-            title="Expanse 3.0"
+            alt="Code Cleanse"
+            title="Code Cleanse"
             date="Date: 12th March 2021"
             venue="Venue: XXX"
             time="Time: XXX"
-            about="The expanse,
-            most awaited event of murious.
-            a 18-hours long hackathon where
-            juitians will come together in
-            teams of 2-4 members to create
-            solution on real life problems.
-            let's sit, play, eat, chill and work
-            to create
-            the best we can.
+            about="Unleash your inner code
+            detective and embark on a quest
+            to uncover hidden errors
+            lurking within lines of code.
+            with each bug squashed, you'll
+            inch closer to unraveling the
+            mystery and claiming your
+            rightful place among coding
+            champions.
             "
             img1={Image1}
             alt1="Image"

@@ -11,26 +11,106 @@
         {
             "id": 2,
             "imageUrl": "../../public/images/IMG_5187.JPG",
-            "eventName": "Tech Fusion 2.0",
-            "tagline": "Explore the intersection of creativity and technology at Murious 18.0",
+            "eventName": "Code Chaos",
+            "tagline": "Have a chance to win the chaos at Murious 18.0",
             "price": 200,
-            "readMoreLink": "/"
+            "readMoreLink": "/codechaos"
         },
         {
             "id": 3,
             "imageUrl": "../../public/images/IMG_5187.JPG",
-            "eventName": "InnoHacks 4.0",
-            "tagline": "Fuel your passion for innovation at Murious 18.0",
+            "eventName": "InterFace Invent",
+            "tagline": "Step into the realm of digital design at Murious 18.0",
             "price": 300,
-            "readMoreLink": "/"
+            "readMoreLink": "/interfaceinvent"
         },
         {
             "id": 4,
             "imageUrl": "../../public/images/IMG_5187.JPG",
-            "eventName": "CodeCraft 1.0",
-            "tagline": "Craft your code to perfection at Murious 18.0",
+            "eventName": "Picture Perfect",
+            "tagline": "Flex your photography skills at Murious 18.0",
             "price": 150,
-            "readMoreLink": "/"
+            "readMoreLink": "/pictureperfect"   
+        },
+        {
+            "id": 5,
+            "imageUrl": "../../public/images/IMG_5187.JPG",
+            "eventName": "Frame By Frame",
+            "tagline": "Tell a story your wat at Murious 18.0",
+            "price": 150,
+            "readMoreLink": "/framebyframe"   
+        },
+        {
+            "id": 6,
+            "imageUrl": "../../public/images/IMG_5187.JPG",
+            "eventName": "7 Days 7 Designs",
+            "tagline": "Embark on a journey to create captivating logos at Murious 18.0",
+            "price": 150,
+            "readMoreLink": "/7days7designs"   
+        },
+        {
+            "id": 7,
+            "imageUrl": "../../public/images/IMG_5187.JPG",
+            "eventName": "Bridge Making",
+            "tagline": "Build the best bridge model at Murious 18.0",
+            "price": 220,
+            "readMoreLink": "/bridgemaking"   
+        },
+        {
+            "id": 8,
+            "imageUrl": "../../public/images/IMG_5187.JPG",
+            "eventName": "Web-O-Fiesta",
+            "tagline": "Prove your coding mettle at Murious 18.0",
+            "price": 220,
+            "readMoreLink": "/webofiesta"   
+        },
+        {
+            "id": 9,
+            "imageUrl": "../../public/images/IMG_5187.JPG",
+            "eventName": "Code Cleanse",
+            "tagline": "Uncover hidden errors lurking in the code at Murious 18.0",
+            "price": 220,
+            "readMoreLink": "/codecleanse"   
+        },
+        {
+            "id": 10,
+            "imageUrl": "../../public/images/IMG_5187.JPG",
+            "eventName": "Make It Print",
+            "tagline": "Showcase your creativity and wear your designs at Murious 18.0",
+            "price": 220,
+            "readMoreLink": "/makeitprint"   
+        },
+        {
+            "id": 11,
+            "imageUrl": "../../public/images/IMG_5187.JPG",
+            "eventName": "Code Rumble",
+            "tagline": "Eliminate opponents royal rumble style at Murious 18.0",
+            "price": 220,
+            "readMoreLink": "/coderumble"   
+        },
+        {
+            "id": 12,
+            "imageUrl": "../../public/images/IMG_5187.JPG",
+            "eventName": "Code Relay",
+            "tagline": "Pass the coding baton in this programming relay at Murious 18.0",
+            "price": 220,
+            "readMoreLink": "/coderelay"   
+        },
+        {
+            "id": 13,
+            "imageUrl": "../../public/images/IMG_5187.JPG",
+            "eventName": "Storage Wars",
+            "tagline": "Show your negotiation, financial literacy and strategic skills at Murious 18.0",
+            "price": 220,
+            "readMoreLink": "/storagewars"   
+        },
+        {
+            "id": 14,
+            "imageUrl": "../../public/images/IMG_5187.JPG",
+            "eventName": "Bandish",
+            "tagline": "Showcase your musical talent and connect through music at Murious 18.0",
+            "price": 220,
+            "readMoreLink": "/bandish"   
         }
     ],
 

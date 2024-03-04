@@ -11,20 +11,20 @@ export default function Expanse() {
         <span className="header-bg-for-white"/>
           <Cards
             img={Image1}
-            alt="Expanse"
-            title="Expanse 3.0"
+            alt="Code Rumble"
+            title="Code Rumble"
             date="Date: 12th March 2021"
             venue="Venue: XXX"
             time="Time: XXX"
-            about="The expanse,
-            most awaited event of murious.
-            a 18-hours long hackathon where
-            juitians will come together in
-            teams of 2-4 members to create
-            solution on real life problems.
-            let's sit, play, eat, chill and work
-            to create
-            the best we can.
+            about="Prepare for an adrenalinefueled coding extravaganza
+            inspired by wwe's royal rumble
+            – welcome to Code Rumble by IEEE JUIT-SB! This
+            dynamic event pits coding
+            enthusiasts against each other
+            in a series of ruthless rounds,
+            eliminating contenders until
+            only the coding champion
+            remains.
             "
             img1={Image1}
             alt1="Image"

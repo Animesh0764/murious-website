@@ -11,21 +11,23 @@ export default function Expanse() {
         <span className="header-bg-for-white"/>
           <Cards
             img={Image1}
-            alt="Expanse"
-            title="Expanse 3.0"
+            alt="Storage Wars"
+            title="Storage Wars"
             date="Date: 12th March 2021"
             venue="Venue: XXX"
             time="Time: XXX"
-            about="The expanse,
-            most awaited event of murious.
-            a 18-hours long hackathon where
-            juitians will come together in
-            teams of 2-4 members to create
-            solution on real life problems.
-            let's sit, play, eat, chill and work
-            to create
-            the best we can.
-            "
+            about="In 'storage wars,
+            ' students
+            engage in bidding on storage
+            containers using fake currency,
+            inspecting only the exterior.
+            teams of 2-4 collaborate,
+            emphasizing strategic thinking
+            and resource management. The
+            event fosters negotiation,
+            financial literacy, and
+            teamwork skills in a competitive
+            setting."
             img1={Image1}
             alt1="Image"
             img2={Image1}

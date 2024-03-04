@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from 'react';
+// import { Redirect } from 'react-router-dom';
+import { getAuth } from 'firebase/auth';
 import '../../public/css/RegForm.css';
 import { useFirebase } from "../context/firebase";
 import { addDoc, collection, getFirestore, query, getDocs, where } from "firebase/firestore";
+// import { v4 as uuidv4 } from 'uuid';
 import toast, { Toaster } from 'react-hot-toast';
 
 const teamEvents = [
@@ -19,6 +22,21 @@ const RegistrationForm = () => {
     const [availableEvents, setAvailableEvents] = useState([]);
     const [selectedEvents, setSelectedEvents] = useState([]);
     const [totalCost, setTotalCost] = useState(0);
+    const [user, setUser] = useState(null);
+
+    useEffect(() => {
+        const firebaseAuth = getAuth();
+        firebaseAuth.onAuthStateChanged((currentUser) => {
+            if (!currentUser) {
+                toast.error('Please sign in to register for the event');
+                setTimeout(() => {
+                    window.location.href = '/signin';
+                }, 2000);
+            } else {
+                setUser(currentUser);
+            }
+        });
+    }, [])
 
     // Common fields
     const [name, setName] = useState('');
@@ -77,20 +95,38 @@ const RegistrationForm = () => {
     const db = getFirestore();
 
     const registerUserforIndividualEvents = async (userData) => {
-        const querySnapshot = await getDocs(query(collection(db, "registeredEvents"), where("username", "==", userData.username), where("contact", "==", userData.mobile)));
-        if (!querySnapshot.empty) {
-            console.log("Already exists");
-            toast.error('User already registered for the event');
+        const user = firebase.auth().currentUser;
+        if (!user) {
+            console.error("User is not authenticated");
             return;
         }
-        const docRef = await addDoc(collection(db, "registeredEvents"), {
+
+        const userEmail = user.email;
+        const userUid = user.uid;
+
+        console.log(userEmail, userUid);
+
+        const querySnapshot = await getDocs(query(collection(db, "registeredEvents"), where("email", "==", userEmail)));
+
+        if (!querySnapshot.empty) {
+            const registeredEvents = querySnapshot.docs.map(doc => doc.data().events);
+            const userRegisteredEvents = Object.keys(Object.assign({}, ...registeredEvents));
+            const duplicateEvents = userData.selectedEvents.filter(event => userRegisteredEvents.includes(event.name));
+            if (duplicateEvents.length > 0) {
+                toast.error(`You're already registered for ${duplicateEvents.map(event => event.name).join(', ')}`);
+                return;
+            }
+        }
+
+        const docRef = await addDoc(collection(db, "registeredEvents", userUid), {
             username: userData.username,
             events: userData.selectedEvents.reduce((acc, eventName) => {
-                acc[eventName] = true;
+                acc[eventName.name] = true;
                 return acc;
             }, {}),
             college: userData.college,
             contact: userData.mobile,
+            email: userEmail,
         });
         toast.success('User registered for the event');
         // Redirecting back to home page after successful registration
@@ -100,13 +136,19 @@ const RegistrationForm = () => {
     }
 
     const registerUserforTeamEvents = async (teamData) => {
-        const querySnapshot = await getDocs(query(collection(db, "registeredTeamEvents"), where("teamName", "==", teamData.teamName)));
-    
-        if (!querySnapshot.empty) {
-            console.log("Team already exists");
-            toast.error('Team with the same name already registered for the event');
+        const userEmail = firebase.auth().currentUser.email;
+
+        const querySnapshot = await getDocs(query(collection(db, "registeredTeamEvents"), where("email", "==", userEmail)));
+
+    if (!querySnapshot.empty) {
+        const registeredEvents = querySnapshot.docs.map(doc => doc.data().events);
+        const userRegisteredEvents = Object.keys(Object.assign({}, ...registeredEvents));
+        const duplicateEvents = teamData.selectedEvents.filter(event => userRegisteredEvents.includes(event.name));
+        if (duplicateEvents.length > 0) {
+            toast.error(`You're already registered for ${duplicateEvents.map(event => event.name).join(', ')}`);
             return;
         }
+    }
     
         const docRef = await addDoc(collection(db, "registeredTeamEvents"), {
             teamName: teamData.teamName,
@@ -114,9 +156,10 @@ const RegistrationForm = () => {
             teamMembers: teamData.teamMembers,
             contact: teamData.mobile,
             events: teamData.selectedEvents.reduce((acc, eventName) => {
-                acc[eventName] = true;
+                acc[eventName.name] = true;
                 return acc;
             }, {}),
+            email: userEmail,
         });
         toast.success('Team registered for the event');
         setTimeout(() => {

@@ -226,3 +226,77 @@ const Authentication = () => {
 };
 
 export default Authentication;
+
+{/* <div className="container">
+<div className="forms-container">
+  <div className="signin-signup">
+    <form action="#" className="sign-in-form">
+      <h2 className="title">Sign in</h2>
+      <div className="input-field">
+        <FontAwesomeIcon icon={faUser} />
+        <input type="text" placeholder="Username" />
+      </div>
+      <div className="input-field">
+        <FontAwesomeIcon icon={faLock} />
+        <input type="password" placeholder="Password" />
+      </div>
+      <input type="submit" value="Login" className="btn solid" />
+      <p className="social-text">Or Sign in with social platforms</p>
+      <div className="social-media">
+        <a href="#" className="social-icon">
+          <FontAwesomeIcon icon={faGoogle} />
+        </a>
+      </div>
+    </form>
+    <form action="#" className="sign-up-form">
+      <h2 className="title">Sign up</h2>
+      <div className="input-field">
+        <FontAwesomeIcon icon={faUser} />
+        <input type="text" placeholder="Username" />
+      </div>
+      <div className="input-field">
+        <FontAwesomeIcon icon={faEnvelope} />
+        <input type="email" placeholder="Email" />
+      </div>
+      <div className="input-field">
+        <FontAwesomeIcon icon={faLock} />
+        <input type="password" placeholder="Password" />
+      </div>
+      <input type="submit" className="btn" value="Sign up" />
+      <p className="social-text">Or Sign up with social platforms</p>
+      <div className="social-media">
+        <a href="#" className="social-icon">
+          <FontAwesomeIcon icon={faGoogle} />
+        </a>
+      </div>
+    </form>
+  </div>
+</div>
+
+<div className="panels-container">
+  <div className="panel left-panel">
+    <div className="content">
+      <h3>New here ?</h3>
+      <p>
+        Hello and welcome to Murious, your one-stop tech event platform! We're thrilled to have you on board.
+      </p>
+      <button className="btn transparent" id="sign-up-btn">
+        Sign up
+      </button>
+    </div>
+    <img src="img/murious logo.svg" className="image" alt="" />
+  </div>
+  <div className="panel right-panel">
+    <div className="content">
+      <h3>One of us ?</h3>
+      <p>
+        Already a member? Welcome back! Sign in and resume your tech-filled adventure with Murious.
+      </p>
+      <button className="btn transparent" id="sign-in-btn">
+        Sign in
+      </button>
+    </div>
+    <img src="img/murious logo.svg" className="image" alt="" />
+  </div>
+</div>
+</div> */}

@@ -79,6 +79,41 @@ const Authentication = () => {
       });
   }
 
+  const signupUserUsingEmailandPassword = (email, password) => {
+    const firebaseAuth = getAuth();
+    createUserWithEmailAndPassword(firebaseAuth, email, password)
+      .then((userCredential) => {
+        // Signed up successfully
+        const user = userCredential.user;
+        toast.success(`Successfully signed up as ${user.email}`);
+        // You can redirect or perform any additional action here
+      })
+      .catch((error) => {
+        // Error occurred during sign up
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        toast.error(errorMessage);
+      });
+  }
+  
+  const signinUserUsingEmailandPassword = (email, password) => {
+    const firebaseAuth = getAuth();
+    signInWithEmailAndPassword(firebaseAuth, email, password)
+      .then((userCredential) => {
+        // Signed in successfully
+        const user = userCredential.user;
+        toast.success(`Successfully signed in as ${user.email}`);
+        // You can redirect or perform any additional action here
+      })
+      .catch((error) => {
+        // Error occurred during sign in
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        toast.error(errorMessage);
+      });
+  }
+  
+
   const firebase = useFirebase();
 
   return (
@@ -92,6 +127,7 @@ const Authentication = () => {
         color: '#fff',
         textAlign: 'center'
       }}>
+        <Toaster />
       <h2 style={{ color: '#ff69b4', fontSize: '2rem', marginBottom: '2rem' }}>{isLogin ? 'Login' : 'Sign Up'}</h2>
       <form style={{ marginBottom: '20px' }}>
         {isLogin ? (
@@ -126,7 +162,8 @@ const Authentication = () => {
             </div>
           </>
         )}
-        <button type="submit" style={{ width: '100%', padding: '10px', backgroundColor: '#ff69b4', color: '#fff', border: 'none', borderRadius: '4px', cursor: 'pointer', transition: 'background-color 0.3s ease' }}>{isLogin ? 'Login' : 'Sign Up'}</button>
+        <button type="submit" onClick={() => isLogin ? signinUserUsingEmailandPassword(email, password) : signupUserUsingEmailandPassword(email, password)} style={{ width: '100%', padding: '10px', backgroundColor: '#ff69b4', color: '#fff', border: 'none', borderRadius: '4px', cursor: 'pointer', transition: 'background-color 0.3s ease' }}>{isLogin ? 'Login' : 'Sign Up'}</button>
+
       </form>
       <p style={{ textAlign: 'center', color: '#fff' }}>
         {isLogin ? 'Don\'t have an account? ' : 'Already have an account? '}

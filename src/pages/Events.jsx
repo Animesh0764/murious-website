@@ -8,19 +8,19 @@ const Events = () => {
   const [startIndexUpcoming, setStartIndexUpcoming] = useState(0);
 
   const nextImagesOngoing = () => {
-    if (startIndexOngoing + 3 < ongoing.length) {
-      setStartIndexOngoing(startIndexOngoing + 3);
+    if (startIndexOngoing + 1 < ongoing.length) {
+      setStartIndexOngoing(startIndexOngoing + 1);
     }
   };
 
   const prevImagesOngoing = () => {
     if (startIndexOngoing > 0) {
-      setStartIndexOngoing(startIndexOngoing - 3);
+      setStartIndexOngoing(startIndexOngoing - 1);
     }
   };
 
   const renderEventCardsOngoing = (events) => {
-    return events.slice(startIndexOngoing, startIndexOngoing + 3).map(event => (
+    return events.slice(startIndexOngoing, startIndexOngoing + 1).map(event => (
       <EventCard
         key={event.id}
         imageUrl={event.imageUrl}
@@ -33,19 +33,19 @@ const Events = () => {
   };
 
   const nextImagesUpcoming = () => {
-    if (startIndexUpcoming + 3 < upcoming.length) {
-      setStartIndexUpcoming(startIndexUpcoming + 3);
+    if (startIndexUpcoming + 1 < upcoming.length) {
+      setStartIndexUpcoming(startIndexUpcoming + 1);
     }
   };
 
   const prevImagesUpcoming = () => {
     if (startIndexUpcoming > 0) {
-      setStartIndexUpcoming(startIndexUpcoming - 3);
+      setStartIndexUpcoming(startIndexUpcoming - 1);
     }
   };
 
   const renderEventCardsUpcoming = (events) => {
-    return events.slice(startIndexUpcoming, startIndexUpcoming + 3).map(event => (
+    return events.slice(startIndexUpcoming, startIndexUpcoming + 1).map(event => (
       <EventCard
         key={event.id}
         imageUrl={event.imageUrl}

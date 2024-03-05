@@ -55,3 +55,15 @@ body {
     letter-spacing: 1vw;
     text-transform: uppercase;
 }
+
+@media screen and (max-width: 768px) {
+	.horizontal-section {
+		width: 100%;
+		height: 50vh;
+	}
+	#container {
+		width: 200%;
+		height: 20vh;
+	}
+	
+}

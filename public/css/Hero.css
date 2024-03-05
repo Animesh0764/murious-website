@@ -114,3 +114,28 @@
     font-family: Switzer;
     color: rgba(0, 0, 0);
   }
+
+
+@media (max-width: 1212px) {
+  .front-title{
+    font-size: 80px;
+  }
+}
+
+@media (max-width: 970px) {
+  .front-title{
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 585px) {
+  .front-title{
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .front-title{
+    font-size: 20px;
+  }
+}

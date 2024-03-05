@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import "../../public/css/Auth.css";
 import Murious from "../../public/images/muriouslogo.webp";
 import { FaEnvelope, FaLock, FaGoogle } from "react-icons/fa";
 import { useFirebase } from "../context/firebase";
@@ -19,6 +18,12 @@ const Authentication = () => {
   const [showPassword1, setShowPassword1] = useState(false);
   const [isMobileView, setIsMobileView] = useState(false);
   const [user, setUser] = useState(null);
+
+  const [isLogin, setIsLogin] = useState(true);
+
+  const handleToggleMode = () => {
+    setIsLogin(!isLogin);
+  };
 
   useEffect(() => {
     const firebaseAuth = getAuth();
@@ -77,226 +82,60 @@ const Authentication = () => {
   const firebase = useFirebase();
 
   return (
-    <div className="sign-body">
-      <Toaster />
-      {isMobileView && <div className="error-msg" style={{ textAlign: 'center' }}>Please use a desktop/laptop to authenticate yourself. Thanks</div>}
-      {!isMobileView && (
-      <div
-        className={`sign-container ${isSignUpMode ? "sign-up-mode" : ""} ${
-          isSignUpMode2 ? "sign-up-mode2" : ""
-        }`}
-      >
-        <div className="signin-signup">
-          <div className="singin-page">
-          <form
-            action=""
-            className={`sign-in-form ${isSignUpMode ? "hidden" : ""}`}
-          >
-            <h2 className="title">Sign in</h2>
-            <div className="input-field">
-              <i className="fas fa-envelope">
-                <FaEnvelope></FaEnvelope>
-              </i>
-              <input type="text" placeholder="Email" />
+    <div style={{ 
+        maxWidth: '400px',
+        margin: '10rem auto',
+        padding: '20px',
+        border: '1px solid #ccc',
+        borderRadius: '8px',
+        backgroundColor: '#222',
+        color: '#fff',
+        textAlign: 'center'
+      }}>
+      <h2 style={{ color: '#ff69b4', fontSize: '2rem', marginBottom: '2rem' }}>{isLogin ? 'Login' : 'Sign Up'}</h2>
+      <form style={{ marginBottom: '20px' }}>
+        {isLogin ? (
+          <>
+            <label htmlFor="login-email" style={{ display: 'block', marginBottom: '5px', color: '#ff69b4' }}>Email:</label>
+            <input type="email" id="login-email" name="email" style={{ width: '100%', padding: '10px', marginBottom: '10px', border: '1px solid #ccc', borderRadius: '4px', backgroundColor: '#444', color: '#fff' }} />
+            <label htmlFor="login-password" style={{ display: 'block', marginBottom: '5px', color: '#ff69b4' }}>Password:</label>
+            <input type={showPassword ? "text" : "password"} id="login-password" name="password" style={{ width: '100%', padding: '10px', marginBottom: '10px', border: '1px solid #ccc', borderRadius: '4px', backgroundColor: '#444', color: '#fff' }} />
+            <div style={{ textAlign: 'center' }}>
+              <p style={{ color: '#fff' }}>Login using your google account:</p>
+              <br />
+              <FaGoogle className="social-icon" fill="white" onClick={signupUserUsingGoogle}></FaGoogle>
             </div>
-            <div className="input-field">
-              <i className="fas fa-lock">
-                <FaLock></FaLock>
-              </i>
-              <input
-                type={showPassword ? "text" : "password"}
-                
-                id="passw"
-                placeholder="Password"
-              />
-              <span className="show-btn" onClick={handleTogglePassword}>
-                <i
-                  className={`fas ${showPassword ? "fa-eye" : "fa-eye-slash"}`}
-                  aria-hidden="true"
-                ></i>
-              </span>
+          </>
+        ) : (
+          <>
+            <label htmlFor="signup-email" style={{ display: 'block', marginBottom: '5px', color: '#ff69b4' }}>Email:</label>
+            <input type="email" id="signup-email" name="email" style={{ width: '100%', padding: '10px', marginBottom: '10px', border: '1px solid #ccc', borderRadius: '4px', backgroundColor: '#444', color: '#fff' }} />
+            <label htmlFor="signup-password" style={{ display: 'block', marginBottom: '5px', color: '#ff69b4' }}>Password:</label>
+            <input type={showPassword ? "text" : "password"} id="signup-password" name="password" style={{ width: '100%', padding: '10px', marginBottom: '10px', border: '1px solid #ccc', borderRadius: '4px', backgroundColor: '#444', color: '#fff' }} />
+            <label htmlFor="signup-confirm-password" style={{ display: 'block', marginBottom: '5px', color: '#ff69b4' }}>Confirm Password:</label>
+            <input
+              type={showPassword1 ? "text" : "password"}
+              id="signup-confirm-password"
+              name="confirmPassword"
+              style={{ width: '100%', padding: '10px', marginBottom: '10px', border: '1px solid #ccc', borderRadius: '4px', backgroundColor: '#444', color: '#fff' }}
+            />
+            <div style={{ textAlign: 'center' }}>
+              <p style={{ color: '#fff' }}>Or Signup using Google account:</p>
+              <br />
+              <FaGoogle className="social-icon" fill="white" onClick={signupUserUsingGoogle}></FaGoogle>
             </div>
-            <input type="submit" value="Login" className="btn" />
-            <p className="social-text">Or Sign in with a social platform</p>
-            <p className="account-text">
-              Don't have an account?{" "}
-              <a href="#" onClick={handleToggleSignUp2}>
-                Sign up
-              </a>
-            </p>
-          </form>
-          <div className="social-media">
-              <button onClick={signupUserUsingGoogle} className="social-icon">
-                <i className="fab fa-google">
-                  <FaGoogle></FaGoogle>
-                </i>
-              </button>
-            </div>
-          </div>
-
-          <div className="signup-page">
-          <form
-            action=""
-            className={`sign-up-form ${isSignUpMode ? "" : "hidden"}`}
-          >
-            <h2 className="title">Sign up</h2>
-            <div className="input-field">
-              <i>
-                <FaEnvelope></FaEnvelope>
-              </i>
-              <input type="text" placeholder="Email" />
-            </div>
-            <div className="input-field">
-              <i className="fas fa-lock">
-                <FaLock></FaLock>
-              </i>
-              <input
-                type={showPassword1 ? "text" : "password"}
-                
-                id="passw1"
-                placeholder="Password"
-              />
-              <span className="show-btn" onClick={handleTogglePassword1}>
-                <i
-                  className={`fas ${showPassword1 ? "fa-eye" : "fa-eye-slash"}`}
-                  aria-hidden="true"
-                ></i>
-              </span>
-            </div>
-            <input type="submit" value="Sign up" className="btn" />
-            <p className="social-text">Or Sign up with a social platform</p>
-            <p className="account-text">
-              Already have an account?{" "}
-              <a href="#" onClick={handleToggleSignUp}>
-              Sign in
-              </a>
-            </p>
-          </form>
-          <div className="social-media">
-              <button onClick={signupUserUsingGoogle} className="social-icon">
-                <i className="fab fa-google">
-                  <FaGoogle></FaGoogle>
-                </i>
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <div className="panels-container">
-          <div className="panel left-panel">
-            <img src={Murious} alt="murious logo" className="image" />
-            <div className="content">
-              <h3>Member of Murious?</h3>
-              <p>
-                Already a member? Welcome back! Sign in and resume your
-                tech-filled adventure with Murious.
-              </p>
-              <button
-                className="btn"
-                id="sign-in-btn"
-                onClick={handleToggleSignUp}
-              >
-                Sign in
-              </button>
-            </div>
-          </div>
-
-          <div className="panel right-panel">
-            <img src={Murious} alt="murious logo" className="image" />
-            <div className="content">
-              <h3>New to Murious?</h3>
-              <p>
-                Hello and welcome to Murious, your one-stop tech event platform!
-                We're thrilled to have you on board.
-              </p>
-              <button
-                className="btn"
-                id="sign-up-btn"
-                onClick={handleToggleSignUp}
-              >
-                Sign up
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      )}
+          </>
+        )}
+        <button type="submit" style={{ width: '100%', padding: '10px', backgroundColor: '#ff69b4', color: '#fff', border: 'none', borderRadius: '4px', cursor: 'pointer', transition: 'background-color 0.3s ease' }}>{isLogin ? 'Login' : 'Sign Up'}</button>
+      </form>
+      <p style={{ textAlign: 'center', color: '#fff' }}>
+        {isLogin ? 'Don\'t have an account? ' : 'Already have an account? '}
+        <button onClick={handleToggleMode} style={{ background: 'none', border: 'none', color: '#ff69b4', cursor: 'pointer', transition: 'color 0.3s ease' }}>
+          {isLogin ? 'Sign Up' : 'Login'}
+        </button>
+      </p>
     </div>
   );
-};
+}
 
 export default Authentication;
-
-{/* <div className="container">
-<div className="forms-container">
-  <div className="signin-signup">
-    <form action="#" className="sign-in-form">
-      <h2 className="title">Sign in</h2>
-      <div className="input-field">
-        <FontAwesomeIcon icon={faUser} />
-        <input type="text" placeholder="Username" />
-      </div>
-      <div className="input-field">
-        <FontAwesomeIcon icon={faLock} />
-        <input type="password" placeholder="Password" />
-      </div>
-      <input type="submit" value="Login" className="btn solid" />
-      <p className="social-text">Or Sign in with social platforms</p>
-      <div className="social-media">
-        <a href="#" className="social-icon">
-          <FontAwesomeIcon icon={faGoogle} />
-        </a>
-      </div>
-    </form>
-    <form action="#" className="sign-up-form">
-      <h2 className="title">Sign up</h2>
-      <div className="input-field">
-        <FontAwesomeIcon icon={faUser} />
-        <input type="text" placeholder="Username" />
-      </div>
-      <div className="input-field">
-        <FontAwesomeIcon icon={faEnvelope} />
-        <input type="email" placeholder="Email" />
-      </div>
-      <div className="input-field">
-        <FontAwesomeIcon icon={faLock} />
-        <input type="password" placeholder="Password" />
-      </div>
-      <input type="submit" className="btn" value="Sign up" />
-      <p className="social-text">Or Sign up with social platforms</p>
-      <div className="social-media">
-        <a href="#" className="social-icon">
-          <FontAwesomeIcon icon={faGoogle} />
-        </a>
-      </div>
-    </form>
-  </div>
-</div>
-
-<div className="panels-container">
-  <div className="panel left-panel">
-    <div className="content">
-      <h3>New here ?</h3>
-      <p>
-        Hello and welcome to Murious, your one-stop tech event platform! We're thrilled to have you on board.
-      </p>
-      <button className="btn transparent" id="sign-up-btn">
-        Sign up
-      </button>
-    </div>
-    <img src="img/murious logo.svg" className="image" alt="" />
-  </div>
-  <div className="panel right-panel">
-    <div className="content">
-      <h3>One of us ?</h3>
-      <p>
-        Already a member? Welcome back! Sign in and resume your tech-filled adventure with Murious.
-      </p>
-      <button className="btn transparent" id="sign-in-btn">
-        Sign in
-      </button>
-    </div>
-    <img src="img/murious logo.svg" className="image" alt="" />
-  </div>
-</div>
-</div> */}

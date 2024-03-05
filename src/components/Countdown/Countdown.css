@@ -1,0 +1,33 @@
+    /* styles.css */
+
+.flip-clock {
+    --fcc-flip-duration: 0.5s; /* transition duration when flip card */
+    --fcc-digit-block-width: 40px; /* width of digit card */
+    --fcc-digit-block-height: 3rem; /* height of digit card, highly recommend in even number */
+    --fcc-digit-font-size: 60px; /* font size of digit */
+    --fcc-digit-color: white; /* color of digit */
+    --fcc-label-font-size: 40px; /* font size of label */
+    --fcc-label-color: #ffffff; /* color of label */
+    --fcc-background: #2c2c2c; /* background of digit card */
+    --fcc-divider-color: white; /* color of divider */
+    --fcc-divider-height: 1px; /* height of divider */
+    --fcc-separator-size: 6px; /* size of colon */
+  }
+
+  @font-face {
+    font-family: Switzer;
+    src: url(../../../public/fonts/Switzer-Variable.ttf);
+  }
+
+  .completed-text{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10rem;
+    font-family: Switzer;
+    font-weight: 700;
+    color: #df4adf;
+    margin-bottom: -4rem;
+
+  }

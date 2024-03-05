@@ -2,7 +2,7 @@
     "upcoming" : [
         {
             "id": 1,
-            "imageUrl": "../../public/images/IMG_5187.JPG",
+            "imageUrl": "../../public/images/mainevents/expanse.webp",
             "eventName": "Expanse 3.0",
             "tagline": "Transform ideas into tech marvels at Murious 18.0",
             "price": 250,
@@ -10,7 +10,7 @@
         },
         {
             "id": 2,
-            "imageUrl": "../../public/images/IMG_5187.JPG",
+            "imageUrl": "../../public/images/mainevents/expanse.webp",
             "eventName": "Code Chaos",
             "tagline": "Have a chance to win the chaos at Murious 18.0",
             "price": 200,
@@ -18,7 +18,7 @@
         },
         {
             "id": 3,
-            "imageUrl": "../../public/images/IMG_5187.JPG",
+            "imageUrl": "../../public/images/mainevents/framebyframe.webp",
             "eventName": "InterFace Invent",
             "tagline": "Step into the realm of digital design at Murious 18.0",
             "price": 300,
@@ -26,7 +26,7 @@
         },
         {
             "id": 4,
-            "imageUrl": "../../public/images/IMG_5187.JPG",
+            "imageUrl": "../../public/images/mainevents/pictureperfect.webp",
             "eventName": "Picture Perfect",
             "tagline": "Flex your photography skills at Murious 18.0",
             "price": 150,
@@ -34,7 +34,7 @@
         },
         {
             "id": 5,
-            "imageUrl": "../../public/images/IMG_5187.JPG",
+            "imageUrl": "../../public/images/mainevents/framebyframe.webp",
             "eventName": "Frame By Frame",
             "tagline": "Tell a story your wat at Murious 18.0",
             "price": 150,
@@ -42,15 +42,15 @@
         },
         {
             "id": 6,
-            "imageUrl": "../../public/images/IMG_5187.JPG",
-            "eventName": "7 Days 7 Designs",
+            "imageUrl": "../../public/images/mainevents/tambola.webp",
+            "eventName": "3 Days 3 Designs",
             "tagline": "Embark on a journey to create captivating logos at Murious 18.0",
             "price": 150,
             "readMoreLink": "/7days7designs"   
         },
         {
             "id": 7,
-            "imageUrl": "../../public/images/IMG_5187.JPG",
+            "imageUrl": "../../public/images/IMG_518",
             "eventName": "Bridge Making",
             "tagline": "Build the best bridge model at Murious 18.0",
             "price": 220,
@@ -111,45 +111,61 @@
             "tagline": "Showcase your musical talent and connect through music at Murious 18.0",
             "price": 220,
             "readMoreLink": "/bandish"   
+        },
+        {
+            "id": 15,
+            "imageUrl": "../../public/images/IMG_5187.JPG",
+            "eventName": "E-Sports",
+            "tagline": "Set your game mode on and build your tribe at Murious 18.0",
+            "price": 220,
+            "readMoreLink": "/esports"   
         }
     ],
 
     "ongoing" : [
         {
             "id": 1,
-            "imageUrl": "../../public/images/IMG_5187.JPG",
+            "imageUrl": "../../public/images/mainevents/expanse.webp",
             "eventName": "Inventive Code-a-thon",
             "tagline": "Invent, Code, Win: Murious 18.0 awaits your innovation",
             "price": 220,
             "readMoreLink": "/"
         },
         {
-            "id": 1,
-            "imageUrl": "../../public/images/IMG_5187.JPG",
+            "id": 2,
+            "imageUrl": "../../public/images/mainevents/expanse.webp",
             "eventName": "Inventive Code-a-thon",
             "tagline": "Invent, Code, Win: Murious 18.0 awaits your innovation",
             "price": 220,
             "readMoreLink": "/"
         },
         {
-            "id": 1,
-            "imageUrl": "../../public/images/IMG_5187.JPG",
+            "id": 3,
+            "imageUrl": "../../public/images/mainevents/expanse.webp",
             "eventName": "Inventive Code-a-thon",
             "tagline": "Invent, Code, Win: Murious 18.0 awaits your innovation",
             "price": 220,
             "readMoreLink": "/"
         },
         {
-            "id": 1,
-            "imageUrl": "../../public/images/IMG_5187.JPG",
+            "id": 4,
+            "imageUrl": "../../public/images/mainevents/expanse.webp",
             "eventName": "Inventive Code-a-thon",
             "tagline": "Invent, Code, Win: Murious 18.0 awaits your innovation",
             "price": 220,
             "readMoreLink": "/"
         },
         {
-            "id": 1,
-            "imageUrl": "../../public/images/IMG_5187.JPG",
+            "id": 5,
+            "imageUrl": "../../public/images/mainevents/expanse.webp",
+            "eventName": "Inventive Code-a-thon",
+            "tagline": "Invent, Code, Win: Murious 18.0 awaits your innovation",
+            "price": 220,
+            "readMoreLink": "/"
+        },
+        {
+            "id": 5,
+            "imageUrl": "../../public/images/mainevents/expanse.webp",
             "eventName": "Inventive Code-a-thon",
             "tagline": "Invent, Code, Win: Murious 18.0 awaits your innovation",
             "price": 220,

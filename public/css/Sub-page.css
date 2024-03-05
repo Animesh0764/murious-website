@@ -21,7 +21,7 @@
 .slider .list .item.active::after{
     content: '';
     width: 100%;
-    height: 70%;
+    height: 100%;
     position: absolute;
     left: 0;
     bottom: 0;
@@ -32,8 +32,8 @@
     position: absolute;
     left: 10%;
     top: 20%;
-    width: 500px;
-    max-width: 80%;
+    width: 100%;
+    max-width: 100%;
     z-index: 1;
     color: aliceblue;
 }

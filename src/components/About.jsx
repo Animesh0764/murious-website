@@ -59,18 +59,31 @@ function AboutPage() {
           >
             <h2>MURIOUS 18.0</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-              neque justo, consequat non fermentum ac, tempor eu turpis. Proin
-              nulla eros, placerat non ipsum ut, dapibus ullamcorper ex. Nulla
-              in dapibus lorem. Suspendisse vitae velit ac ante consequat
-              placerat ut sed eros. Nullam porttitor mattis mi, id fringilla ex
-              consequat eu. Praesent pulvinar tincidunt leo et condimentum.
-              Maecenas volutpat turpis at felis egestas malesuada. Phasellus sem
-              odio, venenatis at ex a, lacinia suscipit orci.
+              “TAKE THE JOURNEY, SOAR LIKE AN EAGLE, THERE ARE SO MANY ROADS TO
+              EXPLORE SO LITTLE". PRESENTING TO YOU AN EXPERIENCE LIKE NEVER
+              BEFORE, "MURIOUS: THE THREE DAYS PANORAMA" THE TMP CLUB AT JUIT IS
+              GETTING READY FOR A BIG TECHNICAL FESTIVAL THAT'S MORE THAN JUST
+              AN EVENT; IT'S A MIX OF EXCITEMENT AND BRAINPOWER. THERE'LL BE
+              LOTS OF TECH STUFF TO SEE AND DO, LIKE SHOWS AND DEMOS THAT'LL
+              MAKE YOU THINK. AND DON'T WORRY, IT'S NOT ALL SERIOUS – THERE'LL
+              BE FUN STUFF TOO, LIKE DESIGNING,HACKATHON, AND GAMING CONTESTS.
+              BASICALLY, IT'S GOING TO BE A SUPER FUN CELEBRATION OF TECH AND
+              CREATIVITY!
             </p>
             <div className="about-button-container">
-              <a href="https://drive.google.com" className="drive-button">
+              <a
+                href="https://drive.google.com/file/d/1r5JNhxLxneqJfImbtS2_ROxxe4Pyay3t/view?usp=sharing"
+                target="_blank"
+                className="drive-button"
+              >
                 Brochure
+              </a>
+              <a
+                href="https://www.instagram.com/murious.juit/"
+                target="_blank"
+                className="drive-button"
+              >
+                Follow us here
               </a>
             </div>
           </div>
@@ -95,6 +108,15 @@ function AboutPage() {
               Including all features, it comes with an add-on perk of
               telecasting cricket matches and movies for students.
             </p>
+            <div className="about-button-container">
+              <a
+                href="https://www.instagram.com/jyc.technical.club/"
+                target="_blank"
+                className="drive-button"
+              >
+                Follow us here
+              </a>
+            </div>
           </div>
 
           <div
@@ -121,6 +143,13 @@ function AboutPage() {
             <div className="about-button-container">
               <a href="https://jyc.co.in/" className="drive-button">
                 Know More
+              </a>
+              <a
+                href="https://www.instagram.com/jyc.juit/"
+                target="_blank"
+                className="drive-button"
+              >
+                Follow us here
               </a>
             </div>
           </div>

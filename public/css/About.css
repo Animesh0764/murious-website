@@ -159,6 +159,7 @@ body {
 	text-transform:uppercase;
 	color:#fff;
 	letter-spacing:1px;
+	padding-bottom: 1rem;
 }
 
 #progress-content-section .section-content p {
@@ -167,13 +168,14 @@ body {
 	color:#fff;
 }
 
-.about-button-container {
+.drive-button{
     margin-top: 2rem;
     border: solid 2px #df4adf;
-    height: 3rem;
+    height: 4rem;
     width: 10rem;
+	padding: 1rem;
 }
-.about-button-container a{
+.drive-button{
     text-decoration: none;
     color: #df4adf;
     font-size: 1.5rem;
@@ -182,10 +184,23 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    width: 100%;
+    height: 10%;
+    width: 10%;
     transition: all 0.3s ease;
 
+}
+
+.about-button-container{
+	display: flex;
+	justify-content: space-around;
+	align-items: space-between;
+	margin-top: 2rem;
+}
+.about-button-container a:hover{
+	background-color: #df4adf;
+	color: #fff;
+	border: solid 2px #df4adf;
+	transition: all 0.3s ease;
 }
 
 #progress-content-section .section-content {

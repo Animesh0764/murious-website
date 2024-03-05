@@ -8,15 +8,16 @@ import "../../public/css/MainEvents.css";
 gsap.registerPlugin(ScrollTrigger);
 
 const imageUrls = [
-  "../../public/images/IMG_5187.JPG",
-  "../../public/images/IMG_5187.JPG",
-  "../../public/images/IMG_5187.JPG",
-  "../../public/images/IMG_5187.JPG",
-  "../../public/images/IMG_5187.JPG",
-  "../../public/images/IMG_5187.JPG",
-  "../../public/images/IMG_5187.JPG",
-  "../../public/images/IMG_5187.JPG",
-  "../../public/images/IMG_5187.JPG",
+  "../../public/images/mainevents/expanse.webp",
+  "../../public/images/mainevents/framebyframe.webp",
+  "../../public/images/mainevents/pictureperfect.webp",
+  "../../public/images/mainevents/tambola.webp",
+  "../../public/images/mainevents/valorant.webp",
+  "../../public/images/mainevents/expanse.webp",
+  "../../public/images/mainevents/framebyframe.webp",
+  "../../public/images/mainevents/pictureperfect.webp",
+  "../../public/images/mainevents/tambola.webp",
+  "../../public/images/mainevents/valorant.webp",
 ];
 
 const App = () => {
@@ -52,7 +53,6 @@ const App = () => {
         className="horizontal-section"
         style={{ backgroundImage: `url(${imageUrls[0]})` }}
       >
-        <h1 className="heading">Expanse 3.0</h1>
       </section>
 
       {/* ---------- section 02 ---------- */}
@@ -60,7 +60,7 @@ const App = () => {
         className="horizontal-section"
         style={{ backgroundImage: `url(${imageUrls[1]})` }}
       >
-        <h1 className="heading">Code Chaos</h1>
+        {/* <h1 className="heading">Code Chaos</h1> */}
       </section>
 
       {/* ---------- section 03 ---------- */}
@@ -68,7 +68,7 @@ const App = () => {
         className="horizontal-section"
         style={{ backgroundImage: `url(${imageUrls[2]})` }}
       >
-        <h1 className="heading">Picture Perfect</h1>
+        {/* <h1 className="heading">Picture Perfect</h1> */}
       </section>
 
       {/* ---------- section 04 ---------- */}
@@ -76,35 +76,35 @@ const App = () => {
         className="horizontal-section"
         style={{ backgroundImage: `url(${imageUrls[3]})` }}
       >
-        <h1 className="heading">Web-O-Fiesta</h1>
+        {/* <h1 className="heading">Web-O-Fiesta</h1> */}
       </section>
       <section
         className="horizontal-section"
-        style={{ backgroundImage: `url(${imageUrls[3]})` }}
+        style={{ backgroundImage: `url(${imageUrls[4]})` }}
       >
-        <h1 className="heading">Code Rumble</h1>
+        {/* <h1 className="heading">Code Rumble</h1> */}
       </section>
       <section
         className="horizontal-section"
-        style={{ backgroundImage: `url(${imageUrls[3]})` }}
+        style={{ backgroundImage: `url(${imageUrls[5]})` }}
       >
-        <h1 className="heading">Code Relay</h1>
+        {/* <h1 className="heading">Code Relay</h1> */}
       </section>
       <section
         className="horizontal-section"
-        style={{ backgroundImage: `url(${imageUrls[3]})` }}
+        style={{ backgroundImage: `url(${imageUrls[6]})` }}
       >
-        <h1 className="heading">Storage Wars</h1>
+        {/* <h1 className="heading">Storage Wars</h1> */}
       </section>
       <section
         className="horizontal-section"
-        style={{ backgroundImage: `url(${imageUrls[3]})` }}
+        style={{ backgroundImage: `url(${imageUrls[7]})` }}
       >
-        <h1 className="heading">Bridge Making</h1>
+        {/* <h1 className="heading">Bridge Making</h1> */}
       </section>
       <section
         className="horizontal-section"
-        style={{ backgroundImage: `url(${imageUrls[3]})` }}
+        style={{ backgroundColor: "black" }}
       >
         <button className="btn"
         style={{width:`15rem`, height:`5rem`, borderRadius:`15px

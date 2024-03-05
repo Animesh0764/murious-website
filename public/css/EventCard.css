@@ -16,7 +16,7 @@
 .event-card-container {
   height: 436px;
   width: 95%;
-  background-size: contain;
+  background-size: cover ;
   position: relative;
   overflow: hidden;
   border-radius: 15px;

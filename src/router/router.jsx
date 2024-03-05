@@ -22,6 +22,7 @@ import CodeRumble from "../eventsPages/CodeRumble";
 import CodeRelay from "../eventsPages/CodeRelay";
 import StorageWars from "../eventsPages/StorageWars";
 import Bandish from "../eventsPages/JammingBandish";
+import ESports from "../eventsPages/ESports";
 
 function Router() {
     return (
@@ -49,6 +50,7 @@ function Router() {
                 <Route path='/coderelay' element={<CodeRelay />} />
                 <Route path='/storagewars' element={<StorageWars />} />
                 <Route path='/bandish' element={<Bandish />} />
+                <Route path='/esports' element={<ESports />} />
             </Routes>
     )
 }

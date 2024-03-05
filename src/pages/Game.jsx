@@ -27,8 +27,8 @@ const Game = () => {
     <div className="puzzle-page">
       <JigsawPuzzle
         imageSrc={shuffledImages[0]} // Use the first shuffled image
-        rows={2}
-        columns={2}
+        rows={3}
+        columns={3}
         onSolved={handleSolved}
       />
       <img src={shuffledImages[0]} alt="puzzle" className="puzzle-image" />

@@ -34,12 +34,20 @@
     justify-content: center;
     align-items: center;
     transition: transform 1s ease;
+    width: 100%;
   }
   
   .image-container img {
-    width: calc(90% / 3);
+    width: 40%;
+    height: 40%;
     flex-shrink: 0;
     margin: 1rem;
+  }
+  @media screen and (min-width: 768px) {
+    .image-container img {
+      width: 90%;
+    }
+    
   }
   
   .prev,
@@ -52,7 +60,7 @@
     border: none;
     padding: 10px;
     cursor: pointer;
-    z-index: 9999;
+    z-index: 9;
   }
   
   .prev {

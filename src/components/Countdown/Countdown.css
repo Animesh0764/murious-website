@@ -2,8 +2,8 @@
 
 .flip-clock {
     --fcc-flip-duration: 0.5s; /* transition duration when flip card */
-    --fcc-digit-block-width: 40px; /* width of digit card */
-    --fcc-digit-block-height: 3rem; /* height of digit card, highly recommend in even number */
+    --fcc-digit-block-width: 150px; /* width of digit card */
+    --fcc-digit-block-height: 200px; /* height of digit card, highly recommend in even number */
     --fcc-digit-font-size: 60px; /* font size of digit */
     --fcc-digit-color: white; /* color of digit */
     --fcc-label-font-size: 40px; /* font size of label */
@@ -31,3 +31,4 @@
     margin-bottom: -4rem;
 
   }
+

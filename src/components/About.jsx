@@ -23,7 +23,7 @@ function AboutPage() {
               className={`step step02 ${activeStep >= 1 ? "active" : ""}`}
               onClick={() => handleStepClick(1, "MURIOUS 18.0")}
             >
-              <div className="step-inner">MURIOUS 18.0</div>
+              <div className="step-inner-about">MURIOUS 18.0</div>
             </li>
             <li
               className={`step step03 ${activeStep >= 2 ? "active" : ""}`}
@@ -34,7 +34,7 @@ function AboutPage() {
                 )
               }
             >
-              <div className="step-inner">
+              <div className="step-inner-about">
                 TECHNICAL SCIENCES, MOVIES & PHOTOGRAPHY CLUB{" "}
               </div>
             </li>
@@ -42,7 +42,7 @@ function AboutPage() {
               className={`step step04 ${activeStep >= 3 ? "active" : ""}`}
               onClick={() => handleStepClick(3, "JUIT YOUTH CLUB")}
             >
-              <div className="step-inner">JUIT YOUTH CLUB</div>
+              <div className="step-inner-about">JUIT YOUTH CLUB</div>
             </li>
           </ul>
 

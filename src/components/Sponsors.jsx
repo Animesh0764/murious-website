@@ -1,10 +1,23 @@
 import React from "react";
 import styled,{keyframes, css} from "styled-components";
-import sponsors from "../data/sponsors";
+import sponsors from "../images/muriouslogo.webp";
 
 const App = () => {
 
-  const {row1, row2} = sponsors;
+  const row1 = [
+    sponsors,
+    sponsors,
+    sponsors,
+    sponsors,
+    sponsors
+  ];
+  const row2 = [
+    sponsors,
+    sponsors,
+    sponsors,
+    sponsors,
+    sponsors,
+  ];
 
   return (
     <AppContainer>

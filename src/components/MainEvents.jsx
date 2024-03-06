@@ -3,21 +3,27 @@ import ReactDOM from "react-dom";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "../../public/css/MainEvents.css";
+import Expanse from "../images/mainevents/expanceposter.webp";
+import FrameByFrame from "../images/mainevents/framebyframeposter.webp";
+import Valorant from "../images/mainevents/valorantposter.webp";
+import PicturePerfect from "../images/mainevents/pictureperfectposter.webp";
+import WebOFiesta from "../images/mainevents/web-o-fistaposter.webp";
+import CodeRumble from "../images/mainevents/coderumbleposter.webp";
+import CodeRelay from "../images/mainevents/coderelayposter.png";
+import BridgeMaking from "../images/mainevents/bridgemakingposter.webp";
 
 // ---------- scrollTrigger plugin registration
 gsap.registerPlugin(ScrollTrigger);
 
 const imageUrls = [
-  "../../public/images/mainevents/expanse.webp",
-  "../../public/images/mainevents/framebyframe.webp",
-  "../../public/images/mainevents/pictureperfect.webp",
-  "../../public/images/mainevents/tambola.webp",
-  "../../public/images/mainevents/valorant.webp",
-  "../../public/images/mainevents/expanse.webp",
-  "../../public/images/mainevents/framebyframe.webp",
-  "../../public/images/mainevents/pictureperfect.webp",
-  "../../public/images/mainevents/tambola.webp",
-  "../../public/images/mainevents/valorant.webp",
+  Expanse,
+  FrameByFrame,
+  PicturePerfect,
+  Valorant,
+  WebOFiesta,
+  CodeRumble,
+  CodeRelay,
+  BridgeMaking,  
 ];
 
 const App = () => {
@@ -107,10 +113,10 @@ const App = () => {
         style={{ backgroundColor: "black" }}
       >
         <button className="btn"
-        style={{width:`15rem`, height:`5rem`, borderRadius:`15px
+        style={{width:`20rem`, height:`8rem`, borderRadius:`15px
         `}}>
           <a href="/events" className="btn-link"
-          style={{color:`#fff`, fontSize:`1.5rem`}}>View More...</a>
+          style={{fontSize:`2rem`}}>VIEW MORE...</a>
         </button>
       </section>
     </main>

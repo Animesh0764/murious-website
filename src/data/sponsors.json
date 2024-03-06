@@ -1,18 +1,18 @@
 {
     "row1": [
-       "../../public/images/muriouslogo.webp",
-       "../../public/images/muriouslogo.webp",
-       "../../public/images/muriouslogo.webp",
-       "../../public/images/muriouslogo.webp",
-       "../../public/images/muriouslogo.webp",
-       "../../public/images/muriouslogo.webp"
+       "../images/muriouslogo.webp",
+       "../images/muriouslogo.webp",
+       "../images/muriouslogo.webp",
+       "../images/muriouslogo.webp",
+       "../images/muriouslogo.webp",
+       "../images/muriouslogo.webp"
     ],
     "row2": [
-        "../../public/images/muriouslogo.webp",
-        "../../public/images/muriouslogo.webp",
-        "../../public/images/muriouslogo.webp",
-        "../../public/images/muriouslogo.webp",
-        "../../public/images/muriouslogo.webp"
+        "../images/muriouslogo.webp",
+        "../images/muriouslogo.webp",
+        "../images/muriouslogo.webp",
+        "../images/muriouslogo.webp",
+        "../images/muriouslogo.webp"
     ]
   }
   

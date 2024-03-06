@@ -28,31 +28,31 @@ const Gallery = () => {
   
   const items = [
     {
-      image: 'public/images/hackathon.webp',
+      image: 'images/hackathon.webp',
       name: 'Hackathon',
       description: 'hackathon 2.0',
       link: '/gallery/hackathon'
     },
     {
-      image: 'public/images/webo.webp',
+      image: 'images/webo.webp',
       name: 'Web-O-Fiesta',
       description: 'Designing beautiful websites',
       link: '/gallery/hackathon'
     },
     {
-      image: 'public/images/pictureperfect.webp',
+      image: 'images/pictureperfect.webp',
       name: 'Picture Perfect',
       description: 'Showcasing the story through pictures',
       link: '/gallery/hackathon'
     },
     {
-      image: 'public/images/stock.webp',
+      image: 'images/stock.webp',
       name: 'Stock Simulation',
       description: 'Virtual stock trading',
       link: '/gallery/hackathon'
     },
     {
-      image: 'public/images/design.webp',
+      image: 'images/design.webp',
       name: 'Make It Print',
       description: 'Designing T-Shirts',
       link: '/gallery/hackathon'

@@ -1,7 +1,7 @@
 import React from "react";
 import Cards from "./Cards/Cards";
 import "./EventPages.css";
-import Image1 from "../../public/images/IMG_5187.JPG"
+import Image1 from "../images/IMG_5187.JPG"
 
 
 export default function Expanse() {

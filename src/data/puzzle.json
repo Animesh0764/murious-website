@@ -2,23 +2,23 @@
     "puzzle": [
         {
             "id": "1",
-            "imageUrl": "../../public/images/mainevents/expanse.webp"
+            "imageUrl": "../images/mainevents/expanse.webp"
         },
         {
             "id": "2",
-            "imageUrl": "../../public/images/mainevents/framebyframe.webp"
+            "imageUrl": "../images/mainevents/framebyframe.webp"
         },
         {
             "id": "3",
-            "imageUrl": "../../public/images/mainevents/pictureperfect.webp"
+            "imageUrl": "../images/mainevents/pictureperfect.webp"
         },
         {
             "id": "4",
-            "imageUrl": "../../public/images/mainevents/tambola.webp"
+            "imageUrl": "../images/mainevents/tambola.webp"
         },
         {
-            "id": "4",
-            "imageUrl": "../../public/images/mainevents/valorant.webp"
+            "id": "5",
+            "imageUrl": "../images/mainevents/valorant.webp"
         }
     ]
 }

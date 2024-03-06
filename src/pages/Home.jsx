@@ -22,8 +22,8 @@ const Home = () => {
     return (
         <div>
             <Hero />
-            <About />
-            <Countdown />
+            <About />\
+            {!isPhoneView && <Countdown />}
             {!isPhoneView && <MainEvents />}
             <Sponsors />
             <Footer />

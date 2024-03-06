@@ -11,8 +11,8 @@ export default function Expanse() {
         <span className="header-bg-for-white"/>
           <Cards
             img={Image1}
-            alt="7 Days 7 Designs"
-            title="7 Days 7 Designs"
+            alt="3 Days 3 Designs"
+            title="3 Days 3 Designs"
             date="Date: 12th March 2021"
             venue="Venue: XXX"
             time="Time: XXX"

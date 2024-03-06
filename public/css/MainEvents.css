@@ -24,10 +24,10 @@ body {
 
 .horizontal-section {
 	background-color: black;
-	background-size: cover;
+	background-size: contain;
 	background-position: center;
 	background-repeat: no-repeat;
-	height: 100vh;
+	height: 90vh;
 	width: 50%;
 	display: flex;
 	justify-content: center;

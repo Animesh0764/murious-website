@@ -1,7 +1,7 @@
 import React from "react";
 import Cards from "./Cards/Cards";
 import "./EventPages.css";
-import Image1 from "../images/IMG_5187.JPG"
+import StorageWars from "../images/mainevents/storagewarsposter.webp";
 
 
 export default function Expanse() {
@@ -10,12 +10,12 @@ export default function Expanse() {
         <div className="mov-night">
         <span className="header-bg-for-white"/>
           <Cards
-            img={Image1}
+            img={StorageWars}
             alt="Storage Wars"
             title="Storage Wars"
-            date="Date: 12th March 2021"
-            venue="Venue: XXX"
-            time="Time: XXX"
+            date="Date: 9th March 2023"
+            venue="Venue: BBC"
+            time="Time: 2:00PM - 6:00PM"
             about="In 'storage wars,
             ' students
             engage in bidding on storage
@@ -28,16 +28,6 @@ export default function Expanse() {
             financial literacy, and
             teamwork skills in a competitive
             setting."
-            img1={Image1}
-            alt1="Image"
-            img2={Image1}
-            alt2="Image"
-            img3={Image1}
-            alt3="Image"
-            img4={Image1}
-            alt4="Image"
-            img5={Image1}
-            alt5="Image"
           />
         </div>
       </div>

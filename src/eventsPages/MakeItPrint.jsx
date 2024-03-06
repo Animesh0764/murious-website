@@ -1,7 +1,12 @@
 import React from "react";
 import Cards from "./Cards/Cards";
 import "./EventPages.css";
-import Image1 from "../images/IMG_5187.JPG"
+import Make from "../images/mainevents/makeitprintposter.webp";
+import Make1 from "./images/MakeItPrint/DSC_0811.webp";
+import Make2 from "./images/MakeItPrint/DSC_0813.webp";
+import Make3 from "./images/MakeItPrint/DSC_0814.webp";
+import Make4 from "./images/MakeItPrint/DSC_0815.webp";
+import Make5 from "./images/MakeItPrint/DSC_0816.webp";
 
 
 export default function Expanse() {
@@ -10,12 +15,12 @@ export default function Expanse() {
         <div className="mov-night">
         <span className="header-bg-for-white"/>
           <Cards
-            img={Image1}
+            img={Make}
             alt="Make It Print"
             title="Make It Print"
-            date="Date: 12th March 2021"
-            venue="Venue: XXX"
-            time="Time: XXX"
+            date="Date: 8th March 2023"
+            venue="Venue: CR-4"
+            time="Time: 5:30PM - 6:30PM"
             about="Get creative with 'make it
             print'! design unique prints for
             t-shirts or hoodies based on
@@ -27,15 +32,15 @@ export default function Expanse() {
             opportunity to showcase your
             creativity and wear your own
             artwork!"
-            img1={Image1}
+            img1={Make1}
             alt1="Image"
-            img2={Image1}
+            img2={Make2}
             alt2="Image"
-            img3={Image1}
+            img3={Make5}
             alt3="Image"
-            img4={Image1}
+            img4={Make4}
             alt4="Image"
-            img5={Image1}
+            img5={Make3}
             alt5="Image"
           />
         </div>

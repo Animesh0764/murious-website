@@ -4,7 +4,8 @@ import { JigsawPuzzle } from "react-jigsaw-puzzle/lib";
 import "react-jigsaw-puzzle/lib/jigsaw-puzzle.css";
 import useWindowSize from "react-use/lib/useWindowSize";
 import Confetti from "react-confetti";
-import imageData from "../data/puzzle.json"; // Import your JSON file
+import imageData from "../data/puzzle.json";
+
 
 const Game = () => {
   const { width, height } = useWindowSize();

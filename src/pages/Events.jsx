@@ -6,7 +6,7 @@ import Expanse from "../images/mainevents/expanceposter.webp";
 import CodeChaos from "../images/mainevents/codechaosposter.webp";
 import FrameByFrame from "../images/mainevents/framebyframeposter.webp";
 import PicturePerfect from "../images/mainevents/pictureperfectposter.webp";
-import BGMI from "../images/mainevents/bgmiposter.webp";
+import Leo from "../images/mainevents/jammingleo.webp";
 import BridgeMaking from "../images/mainevents/bridgemakingposter.webp";
 import WebOFiesta from "../images/mainevents/web-o-fistaposter.webp";
 import CodeCleanse from "../images/mainevents/codecleanseposter.webp";
@@ -15,6 +15,7 @@ import CodeRumble from "../images/mainevents/coderumbleposter.webp";
 import CodeRelay from "../images/mainevents/coderelayposter.png";
 import Valorant from "../images/mainevents/valorantposter.webp";
 import InterfaceInvent from "../images/mainevents/interfaceinventposter.webp";
+import StorageWars from "../images/mainevents/storagewarsposter.webp";
 
 
 const upcoming = [
@@ -108,7 +109,7 @@ const upcoming = [
   },
   {
       "id": 12,
-      "imageUrl": CodeRumble,
+      "imageUrl": CodeRelay,
       "eventName": "Code Relay",
       "tagline": "Pass the coding baton in this programming relay at Murious 18.0",
       "price": 220,
@@ -116,7 +117,7 @@ const upcoming = [
   },
   {
       "id": 13,
-      "imageUrl": "../images/IMG_5187.JPG",
+      "imageUrl": StorageWars,
       "eventName": "Storage Wars",
       "tagline": "Show your negotiation, financial literacy and strategic skills at Murious 18.0",
       "price": 220,
@@ -124,7 +125,7 @@ const upcoming = [
   },
   {
       "id": 14,
-      "imageUrl": "../images/IMG_5187.JPG",
+      "imageUrl": Leo,
       "eventName": "Bandish",
       "tagline": "Showcase your musical talent and connect through music at Murious 18.0",
       "price": 220,

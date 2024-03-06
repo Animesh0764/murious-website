@@ -1,7 +1,7 @@
 import React from "react";
 import Cards from "./Cards/Cards";
 import "./EventPages.css";
-import Image1 from "../images/IMG_5187.JPG"
+import CodeCleanse from "../images/mainevents/codecleanseposter.webp";
 
 
 export default function Expanse() {
@@ -10,12 +10,12 @@ export default function Expanse() {
         <div className="mov-night">
         <span className="header-bg-for-white"/>
           <Cards
-            img={Image1}
+            img={CodeCleanse}
             alt="Code Cleanse"
             title="Code Cleanse"
-            date="Date: 12th March 2021"
-            venue="Venue: XXX"
-            time="Time: XXX"
+            date="Date: 09th March 2023"
+            venue="Venue: CR-8"
+            time="Time: 4::00 PM - 5:00 PM"
             about="Unleash your inner code
             detective and embark on a quest
             to uncover hidden errors
@@ -26,16 +26,6 @@ export default function Expanse() {
             rightful place among coding
             champions.
             "
-            img1={Image1}
-            alt1="Image"
-            img2={Image1}
-            alt2="Image"
-            img3={Image1}
-            alt3="Image"
-            img4={Image1}
-            alt4="Image"
-            img5={Image1}
-            alt5="Image"
           />
         </div>
       </div>

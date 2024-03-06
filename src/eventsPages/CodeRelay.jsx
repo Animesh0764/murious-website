@@ -13,9 +13,9 @@ export default function Expanse() {
             img={Image1}
             alt="Code Relay"
             title="Code Relay"
-            date="Date: 12th March 2021"
-            venue="Venue: XXX"
-            time="Time: XXX"
+            date="Date: 10th March 2023"
+            venue="Venue: CL-4"
+            time="Time: 2:00PM - 5:00PM"
             about="This event is a unique and exciting
             competition that combines
             elements of relay race and

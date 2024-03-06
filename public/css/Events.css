@@ -61,6 +61,16 @@
     padding: 10px;
     cursor: pointer;
     z-index: 9;
+    width: 8rem;
+    height: 4rem;
+  }
+  @media screen and (max-width: 768px){
+    .prev,
+    .next {
+      width: 5rem;
+      height: 4rem;
+    }
+    
   }
   
   .prev {

@@ -1,7 +1,12 @@
 import React from "react";
 import Cards from "./Cards/Cards";
 import "./EventPages.css";
-import Image1 from "../images/IMG_5187.JPG"
+import Expanse0 from "../images/mainevents/expanceposter.webp";
+import Expance1 from "./images/Expanse/DSC_0018.webp";
+import Expance2 from "./images/Expanse/DSC_0071.webp";
+import Expance3 from "./images/Expanse/DSC_0084.webp";
+import Expance4 from "./images/Expanse/IMG_2886.webp";
+import Expance5 from "./images/Expanse/IMG_2932.webp";
 
 
 export default function Expanse() {
@@ -10,12 +15,12 @@ export default function Expanse() {
         <div className="mov-night">
         <span className="header-bg-for-white"/>
           <Cards
-            img={Image1}
+            img={Expanse0}
             alt="Expanse"
             title="Expanse 3.0"
-            date="Date: 12th March 2021"
-            venue="Venue: XXX"
-            time="Time: XXX"
+            date="Date: 8th - 9th March 2023"
+            venue="Venue: LT-1,2,3"
+            time="Time: 5:00PM"
             about="The expanse,
             most awaited event of murious.
             a 18-hours long hackathon where
@@ -26,15 +31,15 @@ export default function Expanse() {
             to create
             the best we can.
             "
-            img1={Image1}
+            img1={Expance1}
             alt1="Image"
-            img2={Image1}
+            img2={Expance2}
             alt2="Image"
-            img3={Image1}
+            img3={Expance3}
             alt3="Image"
-            img4={Image1}
+            img4={Expance4}
             alt4="Image"
-            img5={Image1}
+            img5={Expance5}
             alt5="Image"
           />
         </div>

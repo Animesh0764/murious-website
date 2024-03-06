@@ -1,7 +1,7 @@
 import React from "react";
 import Cards from "./Cards/Cards";
 import "./EventPages.css";
-import Image1 from "../images/IMG_5187.JPG";
+import InterfaceInvent from "../images/mainevents/interfaceinventposter.webp";
 
 export default function Expanse() {
   return (
@@ -9,12 +9,12 @@ export default function Expanse() {
       <div className="mov-night">
         <span className="header-bg-for-white" />
         <Cards
-          img={Image1}
+          img={InterfaceInvent}
           alt="InterFace Invent"
           title="InterFace Invent"
-          date="Date: 12th March 2021"
-          venue="Venue: XXX"
-          time="Time: XXX"
+          date="Date: 09th March 2023"
+          venue="Venue: CR-7"
+          time="Time: 5:00PM - 6:30PM"
           about="Step into the realm of digital
             design with 'ui/ux showdown' –
             an electrifying event that
@@ -27,16 +27,6 @@ export default function Expanse() {
             platform to craft stunning
             ui/ux designs on given topics.
             "
-          img1={Image1}
-          alt1="Image"
-          img2={Image1}
-          alt2="Image"
-          img3={Image1}
-          alt3="Image"
-          img4={Image1}
-          alt4="Image"
-          img5={Image1}
-          alt5="Image"
         />
       </div>
     </div>

@@ -23,8 +23,8 @@ export default function Cards(parse) {
             <div className='register-button'>
                 <button className="btn"
                 style={{width:`15rem`, height:`5rem`, borderRadius:`15px`}}>
-                    <a href="/registration" className="btn-link"
-                    style={{color:`#fff`, fontSize:`1.5rem`}}>Register Now</a>
+                    <a href="https://forms.gle/wXU5qZru3eQgM9ox8" target='_blank' className="btn-link"
+                    style={{fontSize:`1.5rem`}}>Register Now</a>
                 </button>
             </div>
         </div>

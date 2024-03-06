@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../../public/css/Footer.css";
-import logojyc from "../../public/images/logojyc.png";
-import logotmp from "../../public/images/logotmp.png";
+import logojyc from "../images/logojyc.png";
+import logotmp from "../images/logotmp.png";
 import { Link } from 'react-router-dom';
 
 function Footer() {

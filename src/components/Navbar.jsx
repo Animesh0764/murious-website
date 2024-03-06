@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import '../../public/css/Header.css';
 import { Link } from 'react-router-dom';
 import { getAuth, signOut } from 'firebase/auth';
+import Logo from "../images/muriouslogo.webp";
 
 const Navbar = () => {
     const [isOverlayActive, setIsOverlayActive] = useState(false);
@@ -30,7 +31,7 @@ const Navbar = () => {
     return (
         <div>
             <header>
-            <Link className="logo" to="/"><img src="../../images/muriouslogo.webp" alt="logo" /></Link>
+            <Link className="logo" to="/"><img src={Logo} alt="logo" /></Link>
                 <nav>
                     <ul className="nav__links">
                         <li><Link className="glow" to="/"><span></span><span></span><span></span><span></span>Home</Link></li>

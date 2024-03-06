@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import Murious from "../../public/images/muriouslogo.webp";
+import Murious from "../images/muriouslogo.webp";
 import { FaEnvelope, FaLock, FaGoogle } from "react-icons/fa";
 import { useFirebase } from "../context/firebase";
 import {

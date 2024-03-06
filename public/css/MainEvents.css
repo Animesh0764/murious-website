@@ -27,7 +27,7 @@ body {
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	height: 90vh;
+	height: 100vh;
 	width: 50%;
 	display: flex;
 	justify-content: center;
@@ -54,6 +54,7 @@ body {
     color: white;
     letter-spacing: 1vw;
     text-transform: uppercase;
+	text-align: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -66,4 +67,20 @@ body {
 		height: 20vh;
 	}
 	
+}
+.btn {
+	font-family: "Switzer";
+	color: white;
+	background-color: #df4adf;
+}
+.btn a{
+	font-family: "Switzer";
+	text-decoration: none;
+	color: white;
+}
+.btn a:hover{
+	color: #df4adf;
+}
+.btn:hover {
+	background-color: white;
 }

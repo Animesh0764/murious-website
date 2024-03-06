@@ -1,25 +1,25 @@
 import React, { useEffect, useRef, useState } from "react";
 import "../../public/css/Hero.css";
-import Image1 from "../../public/images/DSC_0001.webp";
-import Image2 from "../../public/images/DSC_0013.webp";
-import Image3 from "../../public/images/DSC_0025.webp";
-import Image4 from "../../public/images/DSC_0032.webp";
-import Image5 from "../../public/images/DSC_0128.webp";
-import Image6 from "../../public/images/DSC_0168.webp";
-import Image7 from "../../public/images/DSC_0538.webp";
-import Image8 from "../../public/images/DSC_0808.webp";
-import Image9 from "../../public/images/DSC_0831.webp";
-import Image10 from "../../public/images/IMG_2651.webp";
-import Image11 from "../../public/images/IMG_2721.webp";
-import Image12 from "../../public/images/IMG_2868.webp";
-import Image13 from "../../public/images/IMG_2886.webp";
-import Image14 from "../../public/images/IMG_2893.webp";
-import Image15 from "../../public/images/IMG_2926.webp";
-import Image16 from "../../public/images/IMG_2942.webp";
-import Image17 from "../../public/images/IMG_2957.webp";
-import Image18 from "../../public/images/IMG_2969.webp";
-import Image19 from "../../public/images/IMG_2984.webp";
-import Image20 from "../../public/images/IMG_3042.webp";
+import Image1 from "../images/DSC_0001.webp";
+import Image2 from "../images/DSC_0013.webp";
+import Image3 from "../images/DSC_0025.webp";
+import Image4 from "../images/DSC_0032.webp";
+import Image5 from "../images/DSC_0128.webp";
+import Image6 from "../images/DSC_0168.webp";
+import Image7 from "../images/DSC_0538.webp";
+import Image8 from "../images/DSC_0808.webp";
+import Image9 from "../images/DSC_0831.webp";
+import Image10 from "../images/IMG_2651.webp";
+import Image11 from "../images/IMG_2721.webp";
+import Image12 from "../images/IMG_2868.webp";
+import Image13 from "../images/IMG_2886.webp";
+import Image14 from "../images/IMG_2893.webp";
+import Image15 from "../images/IMG_2926.webp";
+import Image16 from "../images/IMG_2942.webp";
+import Image17 from "../images/IMG_2957.webp";
+import Image18 from "../images/IMG_2969.webp";
+import Image19 from "../images/IMG_2984.webp";
+import Image20 from "../images/IMG_3042.webp";
 
 const Hero = () => {
 
